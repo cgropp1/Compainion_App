@@ -52,10 +52,6 @@ class ScreenReader:
         self.ocr_button = tk.Button(self.settings_frame, text="Perform OCR", command=self.perform_ocr, bg='green', fg='white', font=button_font)
         self.ocr_button.pack(padx=5, pady=5)
 
-        # OCR result label
-        self.ocr_label = tk.Label(self.settings_frame, text="", bg='gray', fg='white', font=button_font)
-        self.ocr_label.pack(padx=5, pady=5)
-
         # Settings button
         self.settings_button = tk.Button(self.button_frame, text="Settings", command=self.toggle_settings, bg='gray', fg='white', font=button_font)
         self.settings_button.pack(padx=5, pady=5)
@@ -63,8 +59,6 @@ class ScreenReader:
         # Capture Match button
         self.capture_button = tk.Button(self.button_frame, text="Capture Match", command=self.capture_match, bg='red', fg='white', font=button_font)
         self.capture_button.pack(padx=5, pady=5)
-
-        self.root.bind('<Control-q>', self.close_window)
 
         # Overlay & region tracking
         self.overlays_visible = True  # Track overlay visibility
@@ -95,6 +89,9 @@ class ScreenReader:
         self.settings_frame.bind('<Button-1>', self.start_drag)
         self.settings_frame.bind('<B1-Motion>', self.do_drag)
 
+        # Bind the escape key to close the application
+        self.root.bind('<Escape>', self.close_window)
+
     def start_drag(self, event):
         """Start dragging the frame."""
         self.drag_data = {"x": event.x, "y": event.y}
@@ -110,7 +107,13 @@ class ScreenReader:
         if self.settings_visible:
             self.settings_frame.place_forget()
         else:
-            self.settings_frame.place(x=self.settings_frame_position[0], y=self.settings_frame_position[1])
+            # Calculate the new position to the right of the button frame
+            button_frame_x = self.button_frame.winfo_x()
+            button_frame_y = self.button_frame.winfo_y()
+            button_frame_width = self.button_frame.winfo_width()
+            new_x = button_frame_x + button_frame_width + 10  # Add some padding
+            new_y = button_frame_y
+            self.settings_frame.place(x=new_x, y=new_y)
         self.settings_visible = not self.settings_visible
 
     def toggle_overlay(self):
@@ -166,7 +169,7 @@ class ScreenReader:
             return  # Limit to the specified number of regions
         self.start_x, self.start_y = event.x, event.y
         colors = ['green', 'orange', 'red']
-        labels = ["User 1", "User 2", "End Condition"]
+        labels = ["User 1", "User 2", "Match Making"]
 
         self.current_box = self.canvas.create_rectangle(self.start_x, self.start_y, self.start_x, self.start_y, outline=colors[self.region_count], fill=colors[self.region_count], stipple='gray50')
         self.overlay_shapes.append(self.current_box)  # Store shape reference
@@ -245,8 +248,6 @@ class ScreenReader:
                 self.canvas.itemconfig(shape, state='normal')
             for label in self.text_labels:
                 self.canvas.itemconfig(label, state='normal')
-        if self.ocr_results:
-            self.ocr_label.config(text=f"R1: {self.ocr_results[0]}, R2: {self.ocr_results[1]}" + (f", R3: {self.ocr_results[2]}" if self.num_regions == 3 else ""))
 
     def preprocess_image(self, image):
         """Preprocess the image for better OCR accuracy."""
