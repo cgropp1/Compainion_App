@@ -8,8 +8,6 @@ class apiInterface:
         self.device_key = "bdf1c128-1e7e-4a17-8e6e-98fd89e28f68"
         self.checksum_key = 5343
         self.init_pss_api_client()
-
-        
         pass
 
     def init_pss_api_client(self):
@@ -27,3 +25,8 @@ class apiInterface:
         results = loop.run_until_complete(_asyncio.gather(*tasks))
         users = [user for result in results for user in result]  # Flatten the list of lists
         return users
+    
+    def get_ship_by_user(self, _user: _entities.User) -> _entities.Ship:
+        loop = _asyncio.get_event_loop()
+        temp_ship, temp_user = loop.run_until_complete(self.client.ship_service.inspect_ship(self.access_token, _user.id))
+        return temp_ship

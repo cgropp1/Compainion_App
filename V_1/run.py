@@ -1,50 +1,41 @@
-from src import apiInterface as _apiInterface, user as _user, agent as _agent, screenReader as _screenReader
+from src import apiInterface as _apiInterface, user as _user, agent as _agent, screenReader as _screenReader, ruleEngine as _ruleEngine
 import matches as _matches
 from typing import List, Tuple
 import os as _os
+import sys as _sys
+import asyncio as _asyncio
+import json
 
-def get_matches_input(_apiInterface: _apiInterface) -> List[Tuple[_user.User, _user.User, int]]:
-    print("Input player one name: ")
-    player1 = input()
-    print("Input player two name: ")
-    player2 = input()
-    print("Input match outcome: (0 = player1 wins, 1 = player2 wins, 2 = draw)")
-    outcome = int(input())
-    users = _apiInterface.get_users_by_name([player1, player2])
-    return [(_user.User(_apiInterface, users[0]), _user.User(_apiInterface, users[1]), outcome)]
+# Add the directory containing room_designs_helper.py to the Python path
+#_sys.path.append(_os.path.abspath(_os.path.join(_os.path.dirname(__file__), '..')))
+#import room_designs_helper as _room_designs_helper 
 
-def create_matches_from_user(_apiInterface: _apiInterface) -> List[Tuple[_user.User, _user.User, int]]:
-    print("Enter the names of the players and the outcome of the match")
-    matches: List[Tuple[_user.User, _user.User, int]] = []
-    add_another = "y"
-    while add_another == "y":
-        matches.extend(get_matches_input(_apiInterface))
-        print("Do you want to add another match? (y/n)")
-        add_another = input().lower()
-        if add_another != "y" and add_another != "n":
-            while add_another != "y" and add_another != "n":
-                print("Invalid input, please enter 'y' or 'n'")
-                add_another = input().lower()
-        _os.system('cls' if _os.name == 'nt' else 'clear')
+def room_design_to_dict(room_design) -> dict:
+    """Convert a RoomDesign object to a dictionary."""
+    return {key: value for key, value in vars(room_design).items() if not callable(value) and not key.startswith('_')}
 
-    return matches
-
-def match_callback(results, match_manager, api_interface):
-    user1_name, user2_name, outcome = results
-    users = api_interface.get_users_by_name([user1_name, user2_name])
-    match = (_user.User(api_interface, users[0]), _user.User(api_interface, users[1]), outcome)
-    match_manager.include_matches([match])
-    print(f"Match Captured: {match}")
+async def async_API_calls(_apiInterface) -> List[dict]:
+    room_designs = await _apiInterface.client.room_service.list_room_designs()
+    with open('room_designs.txt', 'w') as f:
+        f.write(str(room_designs))
+    return room_designs
 
 def __main__():
-    apiInterface = _apiInterface.apiInterface()
-    agent = _agent.Agent(apiInterface)
-    match_manager = _matches.Match_Manager(_apiInterface = apiInterface)
-    screenReader = _screenReader.ScreenReader(match_callback=lambda results: match_callback(results, match_manager, apiInterface), num_regions=2)
-    screenReader.run()
+    apiinterface = _apiInterface.apiInterface()
+    #_asyncio.run(async_API_calls(apiinterface))
+    #_room_designs_helper.main()
 
-    print(match_manager)
+
+    with open('room_designs.json', 'r') as f:
+        room_designs = json.load(f)
+
+    temp_user = apiinterface.get_users_by_name(["C3R3S1"])
+    temp_user[0].highest_trophy
+    user = _user.User(_api_interface=apiinterface, _user=temp_user[0], _designs=room_designs)
+    user.to_file()
+
+    #ruleEnginge = _ruleEngine.RuleEngine("ROOM_RULES.dsl", "room_designs.json", f"{user._user_name}_{user._user_id}.gz")
     
-
+    
 if __name__ == "__main__":
-    __main__()
+   __main__()

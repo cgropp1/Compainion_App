@@ -4,8 +4,11 @@ from sklearn.ensemble import RandomForestClassifier as _RandomForestClassifier
 from sklearn.metrics import accuracy_score as _accuracy_score
 from typing import List, Tuple
 
-from src.user import User
-from src.apiInterface import apiInterface
+class User:
+    pass
+
+class apiInterface:
+    pass
 
 class Agent:
     def __init__(self, _api_interface: apiInterface):
