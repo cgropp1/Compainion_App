@@ -100,7 +100,7 @@ class Room:
         return self.room["room_numCrew"]
     
     @property
-    def is_powered(self) -> bool:
+    def powered(self) -> bool:
         return self.room["room_isPowered"]
     
     @property
@@ -118,3 +118,7 @@ class Room:
     @property
     def essential(self) -> bool:
         return self.room["room_essential"]
+    
+    @property
+    def size(self) -> tuple[int, int]:
+        return self.room["room_size"]

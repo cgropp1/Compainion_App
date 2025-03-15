@@ -10,8 +10,6 @@ class apiInterface:
         self.init_pss_api_client()
         pass
 
-   
-
     def init_pss_api_client(self):
         loop = _asyncio.get_event_loop()
         user_login = loop.run_until_complete(self.client.device_login(self.device_key, self.checksum_key))

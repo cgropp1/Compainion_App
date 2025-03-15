@@ -1,5 +1,5 @@
-[
-  {
+{
+  "1": {
     "ActivationDelay": 0,
     "Capacity": 11,
     "CategoryType": "Support",
@@ -51,7 +51,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "2": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -103,7 +103,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "3": {
     "ActivationDelay": 0,
     "Capacity": 90,
     "CategoryType": "Support",
@@ -155,7 +155,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "4": {
     "ActivationDelay": 0,
     "Capacity": 10,
     "CategoryType": "Defence",
@@ -207,7 +207,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "5": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -259,7 +259,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "6": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -347,7 +347,7 @@
       }
     ]
   },
-  {
+  "7": {
     "ActivationDelay": 0,
     "Capacity": 50,
     "CategoryType": "Resources",
@@ -399,7 +399,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "8": {
     "ActivationDelay": 0,
     "Capacity": 2,
     "CategoryType": "Defence",
@@ -451,7 +451,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "9": {
     "ActivationDelay": 0,
     "Capacity": 50,
     "CategoryType": "Weapon",
@@ -503,7 +503,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "10": {
     "ActivationDelay": 0,
     "Capacity": 2,
     "CategoryType": "Support",
@@ -555,7 +555,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 2
   },
-  {
+  "11": {
     "ActivationDelay": 0,
     "Capacity": 15,
     "CategoryType": "Support",
@@ -607,7 +607,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 1
   },
-  {
+  "12": {
     "ActivationDelay": 0,
     "Capacity": 12,
     "CategoryType": "Defence",
@@ -659,7 +659,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 4
   },
-  {
+  "13": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -711,7 +711,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 5
   },
-  {
+  "14": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -799,7 +799,7 @@
       }
     ]
   },
-  {
+  "15": {
     "ActivationDelay": 0,
     "Capacity": 100,
     "CategoryType": "Resources",
@@ -851,7 +851,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 7
   },
-  {
+  "16": {
     "ActivationDelay": 0,
     "Capacity": 2,
     "CategoryType": "Defence",
@@ -903,7 +903,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 8
   },
-  {
+  "17": {
     "ActivationDelay": 0,
     "Capacity": 60,
     "CategoryType": "Weapon",
@@ -955,7 +955,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 9
   },
-  {
+  "18": {
     "ActivationDelay": 10,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -1007,7 +1007,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "19": {
     "ActivationDelay": 10,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -1059,7 +1059,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 18
   },
-  {
+  "20": {
     "ActivationDelay": 0,
     "Capacity": 3,
     "CategoryType": "Support",
@@ -1111,7 +1111,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 10
   },
-  {
+  "21": {
     "ActivationDelay": 0,
     "Capacity": 4,
     "CategoryType": "Support",
@@ -1163,7 +1163,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 20
   },
-  {
+  "22": {
     "ActivationDelay": 0,
     "Capacity": 14,
     "CategoryType": "Defence",
@@ -1215,7 +1215,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 12
   },
-  {
+  "23": {
     "ActivationDelay": 0,
     "Capacity": 15,
     "CategoryType": "Defence",
@@ -1267,7 +1267,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 22
   },
-  {
+  "24": {
     "ActivationDelay": 0,
     "Capacity": 16,
     "CategoryType": "Defence",
@@ -1319,7 +1319,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 23
   },
-  {
+  "25": {
     "ActivationDelay": 0,
     "Capacity": 18,
     "CategoryType": "Defence",
@@ -1371,7 +1371,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 24
   },
-  {
+  "26": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Resources",
@@ -1423,7 +1423,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "27": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Resources",
@@ -1475,7 +1475,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 26
   },
-  {
+  "28": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Resources",
@@ -1527,7 +1527,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 27
   },
-  {
+  "29": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Resources",
@@ -1579,7 +1579,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 28
   },
-  {
+  "30": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Resources",
@@ -1631,7 +1631,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 29
   },
-  {
+  "31": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Resources",
@@ -1683,7 +1683,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 30
   },
-  {
+  "32": {
     "ActivationDelay": 0,
     "Capacity": 6,
     "CategoryType": "Support",
@@ -1735,7 +1735,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "33": {
     "ActivationDelay": 0,
     "Capacity": 9,
     "CategoryType": "Support",
@@ -1787,7 +1787,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 32
   },
-  {
+  "34": {
     "ActivationDelay": 0,
     "Capacity": 12,
     "CategoryType": "Support",
@@ -1839,7 +1839,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 33
   },
-  {
+  "35": {
     "ActivationDelay": 0,
     "Capacity": 15,
     "CategoryType": "Support",
@@ -1891,7 +1891,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 34
   },
-  {
+  "36": {
     "ActivationDelay": 0,
     "Capacity": 18,
     "CategoryType": "Support",
@@ -1943,7 +1943,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 35
   },
-  {
+  "37": {
     "ActivationDelay": 0,
     "Capacity": 21,
     "CategoryType": "Support",
@@ -1995,7 +1995,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 36
   },
-  {
+  "38": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -2047,7 +2047,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 13
   },
-  {
+  "39": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -2099,7 +2099,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 38
   },
-  {
+  "40": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -2151,7 +2151,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 39
   },
-  {
+  "41": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -2203,7 +2203,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 40
   },
-  {
+  "42": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Resources",
@@ -2255,7 +2255,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "43": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Resources",
@@ -2307,7 +2307,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 42
   },
-  {
+  "44": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Resources",
@@ -2359,7 +2359,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 43
   },
-  {
+  "45": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Resources",
@@ -2411,7 +2411,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 44
   },
-  {
+  "46": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Resources",
@@ -2463,7 +2463,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 45
   },
-  {
+  "47": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Resources",
@@ -2515,7 +2515,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 46
   },
-  {
+  "48": {
     "ActivationDelay": 0,
     "Capacity": 19,
     "CategoryType": "Support",
@@ -2567,7 +2567,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 11
   },
-  {
+  "49": {
     "ActivationDelay": 0,
     "Capacity": 25,
     "CategoryType": "Support",
@@ -2619,7 +2619,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 48
   },
-  {
+  "50": {
     "ActivationDelay": 0,
     "Capacity": 30,
     "CategoryType": "Support",
@@ -2671,7 +2671,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 49
   },
-  {
+  "51": {
     "ActivationDelay": 0,
     "Capacity": 35,
     "CategoryType": "Support",
@@ -2723,7 +2723,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 50
   },
-  {
+  "52": {
     "ActivationDelay": 10,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -2775,7 +2775,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 19
   },
-  {
+  "53": {
     "ActivationDelay": 10,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -2827,7 +2827,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 52
   },
-  {
+  "54": {
     "ActivationDelay": 10,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -2879,7 +2879,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 53
   },
-  {
+  "55": {
     "ActivationDelay": 5,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -2931,7 +2931,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 54
   },
-  {
+  "56": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -3019,7 +3019,7 @@
       }
     ]
   },
-  {
+  "57": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -3107,7 +3107,7 @@
       }
     ]
   },
-  {
+  "58": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -3195,7 +3195,7 @@
       }
     ]
   },
-  {
+  "59": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -3283,7 +3283,7 @@
       }
     ]
   },
-  {
+  "60": {
     "ActivationDelay": 0,
     "Capacity": 500,
     "CategoryType": "Resources",
@@ -3335,7 +3335,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "61": {
     "ActivationDelay": 0,
     "Capacity": 1000,
     "CategoryType": "Resources",
@@ -3387,7 +3387,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 60
   },
-  {
+  "62": {
     "ActivationDelay": 0,
     "Capacity": 500,
     "CategoryType": "Resources",
@@ -3439,7 +3439,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "63": {
     "ActivationDelay": 0,
     "Capacity": 1000,
     "CategoryType": "Resources",
@@ -3491,7 +3491,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 62
   },
-  {
+  "64": {
     "ActivationDelay": 0,
     "Capacity": 2000,
     "CategoryType": "Resources",
@@ -3543,7 +3543,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 63
   },
-  {
+  "65": {
     "ActivationDelay": 0,
     "Capacity": 5000,
     "CategoryType": "Resources",
@@ -3595,7 +3595,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 64
   },
-  {
+  "66": {
     "ActivationDelay": 0,
     "Capacity": 2000,
     "CategoryType": "Resources",
@@ -3647,7 +3647,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 61
   },
-  {
+  "67": {
     "ActivationDelay": 0,
     "Capacity": 5000,
     "CategoryType": "Resources",
@@ -3699,7 +3699,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 66
   },
-  {
+  "68": {
     "ActivationDelay": 0,
     "Capacity": 8500,
     "CategoryType": "Resources",
@@ -3751,7 +3751,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 67
   },
-  {
+  "69": {
     "ActivationDelay": 0,
     "Capacity": 15000,
     "CategoryType": "Resources",
@@ -3803,7 +3803,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 68
   },
-  {
+  "70": {
     "ActivationDelay": 0,
     "Capacity": 8500,
     "CategoryType": "Resources",
@@ -3855,7 +3855,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 65
   },
-  {
+  "71": {
     "ActivationDelay": 0,
     "Capacity": 15000,
     "CategoryType": "Resources",
@@ -3907,7 +3907,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 70
   },
-  {
+  "72": {
     "ActivationDelay": 0,
     "Capacity": 33000,
     "CategoryType": "Resources",
@@ -3959,7 +3959,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 69
   },
-  {
+  "73": {
     "ActivationDelay": 0,
     "Capacity": 75000,
     "CategoryType": "Resources",
@@ -4011,7 +4011,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 72
   },
-  {
+  "74": {
     "ActivationDelay": 0,
     "Capacity": 150000,
     "CategoryType": "Resources",
@@ -4063,7 +4063,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 73
   },
-  {
+  "75": {
     "ActivationDelay": 0,
     "Capacity": 33000,
     "CategoryType": "Resources",
@@ -4115,7 +4115,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 71
   },
-  {
+  "76": {
     "ActivationDelay": 0,
     "Capacity": 75000,
     "CategoryType": "Resources",
@@ -4167,7 +4167,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 75
   },
-  {
+  "77": {
     "ActivationDelay": 0,
     "Capacity": 150000,
     "CategoryType": "Resources",
@@ -4219,7 +4219,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 76
   },
-  {
+  "78": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -4271,7 +4271,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "79": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -4323,7 +4323,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "80": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -4375,7 +4375,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 79
   },
-  {
+  "81": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -4427,7 +4427,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 80
   },
-  {
+  "82": {
     "ActivationDelay": 0,
     "Capacity": 6,
     "CategoryType": "Support",
@@ -4479,7 +4479,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "83": {
     "ActivationDelay": 0,
     "Capacity": 9,
     "CategoryType": "Support",
@@ -4531,7 +4531,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 82
   },
-  {
+  "84": {
     "ActivationDelay": 0,
     "Capacity": 12,
     "CategoryType": "Support",
@@ -4583,7 +4583,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 83
   },
-  {
+  "85": {
     "ActivationDelay": 0,
     "Capacity": 70,
     "CategoryType": "Weapon",
@@ -4635,7 +4635,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 17
   },
-  {
+  "86": {
     "ActivationDelay": 0,
     "Capacity": 80,
     "CategoryType": "Weapon",
@@ -4687,7 +4687,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 85
   },
-  {
+  "87": {
     "ActivationDelay": 0,
     "Capacity": 90,
     "CategoryType": "Weapon",
@@ -4739,7 +4739,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 86
   },
-  {
+  "88": {
     "ActivationDelay": 0,
     "Capacity": 2,
     "CategoryType": "Resources",
@@ -4791,7 +4791,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 31
   },
-  {
+  "89": {
     "ActivationDelay": 0,
     "Capacity": 2,
     "CategoryType": "Resources",
@@ -4843,7 +4843,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 88
   },
-  {
+  "90": {
     "ActivationDelay": 0,
     "Capacity": 2,
     "CategoryType": "Resources",
@@ -4895,7 +4895,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 89
   },
-  {
+  "91": {
     "ActivationDelay": 0,
     "Capacity": 2,
     "CategoryType": "Resources",
@@ -4947,7 +4947,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 47
   },
-  {
+  "92": {
     "ActivationDelay": 0,
     "Capacity": 2,
     "CategoryType": "Resources",
@@ -4999,7 +4999,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 91
   },
-  {
+  "93": {
     "ActivationDelay": 0,
     "Capacity": 2,
     "CategoryType": "Resources",
@@ -5051,7 +5051,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 92
   },
-  {
+  "94": {
     "ActivationDelay": 0,
     "Capacity": 3,
     "CategoryType": "Resources",
@@ -5103,7 +5103,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 90
   },
-  {
+  "95": {
     "ActivationDelay": 0,
     "Capacity": 3,
     "CategoryType": "Resources",
@@ -5155,7 +5155,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 94
   },
-  {
+  "96": {
     "ActivationDelay": 0,
     "Capacity": 3,
     "CategoryType": "Resources",
@@ -5207,7 +5207,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 95
   },
-  {
+  "97": {
     "ActivationDelay": 0,
     "Capacity": 300000,
     "CategoryType": "Resources",
@@ -5259,7 +5259,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 77
   },
-  {
+  "98": {
     "ActivationDelay": 0,
     "Capacity": 300000,
     "CategoryType": "Resources",
@@ -5311,7 +5311,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 74
   },
-  {
+  "99": {
     "ActivationDelay": 0,
     "Capacity": 600000,
     "CategoryType": "Resources",
@@ -5363,7 +5363,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 98
   },
-  {
+  "100": {
     "ActivationDelay": 0,
     "Capacity": 750000,
     "CategoryType": "Resources",
@@ -5415,7 +5415,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 99
   },
-  {
+  "101": {
     "ActivationDelay": 0,
     "Capacity": 600000,
     "CategoryType": "Resources",
@@ -5467,7 +5467,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 97
   },
-  {
+  "102": {
     "ActivationDelay": 0,
     "Capacity": 750000,
     "CategoryType": "Resources",
@@ -5519,7 +5519,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 101
   },
-  {
+  "103": {
     "ActivationDelay": 0,
     "Capacity": 2,
     "CategoryType": "Defence",
@@ -5571,7 +5571,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "104": {
     "ActivationDelay": 0,
     "Capacity": 3,
     "CategoryType": "Defence",
@@ -5623,7 +5623,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 16
   },
-  {
+  "105": {
     "ActivationDelay": 0,
     "Capacity": 4,
     "CategoryType": "Defence",
@@ -5675,7 +5675,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 103
   },
-  {
+  "106": {
     "ActivationDelay": 0,
     "Capacity": 5,
     "CategoryType": "Defence",
@@ -5727,7 +5727,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 105
   },
-  {
+  "107": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -5815,7 +5815,7 @@
       }
     ]
   },
-  {
+  "108": {
     "ActivationDelay": 0,
     "Capacity": 30,
     "CategoryType": "Weapon",
@@ -5867,7 +5867,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "109": {
     "ActivationDelay": 0,
     "Capacity": 40,
     "CategoryType": "Weapon",
@@ -5955,7 +5955,7 @@
       }
     ]
   },
-  {
+  "110": {
     "ActivationDelay": 0,
     "Capacity": 50,
     "CategoryType": "Weapon",
@@ -6043,7 +6043,7 @@
       }
     ]
   },
-  {
+  "111": {
     "ActivationDelay": 0,
     "Capacity": 60,
     "CategoryType": "Weapon",
@@ -6131,7 +6131,7 @@
       }
     ]
   },
-  {
+  "112": {
     "ActivationDelay": 0,
     "Capacity": 70,
     "CategoryType": "Weapon",
@@ -6219,7 +6219,7 @@
       }
     ]
   },
-  {
+  "113": {
     "ActivationDelay": 0,
     "Capacity": 80,
     "CategoryType": "Weapon",
@@ -6307,7 +6307,7 @@
       }
     ]
   },
-  {
+  "114": {
     "ActivationDelay": 0,
     "Capacity": 3,
     "CategoryType": "Defence",
@@ -6359,7 +6359,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 104
   },
-  {
+  "115": {
     "ActivationDelay": 0,
     "Capacity": 4,
     "CategoryType": "Defence",
@@ -6411,7 +6411,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 114
   },
-  {
+  "116": {
     "ActivationDelay": 0,
     "Capacity": 20,
     "CategoryType": "Defence",
@@ -6463,7 +6463,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "117": {
     "ActivationDelay": 0,
     "Capacity": 3,
     "CategoryType": "Resources",
@@ -6515,7 +6515,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 93
   },
-  {
+  "118": {
     "ActivationDelay": 0,
     "Capacity": 3,
     "CategoryType": "Resources",
@@ -6567,7 +6567,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 117
   },
-  {
+  "119": {
     "ActivationDelay": 0,
     "Capacity": 3,
     "CategoryType": "Resources",
@@ -6619,7 +6619,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 118
   },
-  {
+  "120": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -6707,7 +6707,7 @@
       }
     ]
   },
-  {
+  "121": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -6795,7 +6795,7 @@
       }
     ]
   },
-  {
+  "122": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -6883,7 +6883,7 @@
       }
     ]
   },
-  {
+  "123": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -6971,7 +6971,7 @@
       }
     ]
   },
-  {
+  "124": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -7023,7 +7023,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "125": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -7075,7 +7075,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 124
   },
-  {
+  "126": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -7163,7 +7163,7 @@
       }
     ]
   },
-  {
+  "127": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -7251,7 +7251,7 @@
       }
     ]
   },
-  {
+  "128": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -7339,7 +7339,7 @@
       }
     ]
   },
-  {
+  "129": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -7427,7 +7427,7 @@
       }
     ]
   },
-  {
+  "130": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -7479,7 +7479,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "131": {
     "ActivationDelay": 0,
     "Capacity": 4,
     "CategoryType": "Defence",
@@ -7531,7 +7531,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 115
   },
-  {
+  "132": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -7583,7 +7583,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "133": {
     "ActivationDelay": 0,
     "Capacity": 6,
     "CategoryType": "Defence",
@@ -7635,7 +7635,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 106
   },
-  {
+  "134": {
     "ActivationDelay": 0,
     "Capacity": 7,
     "CategoryType": "Defence",
@@ -7687,7 +7687,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 133
   },
-  {
+  "135": {
     "ActivationDelay": 0,
     "Capacity": 8,
     "CategoryType": "Defence",
@@ -7739,7 +7739,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 134
   },
-  {
+  "136": {
     "ActivationDelay": 0,
     "Capacity": 9,
     "CategoryType": "Defence",
@@ -7791,7 +7791,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 135
   },
-  {
+  "137": {
     "ActivationDelay": 0,
     "Capacity": 90,
     "CategoryType": "Weapon",
@@ -7879,7 +7879,7 @@
       }
     ]
   },
-  {
+  "138": {
     "ActivationDelay": 0,
     "Capacity": 100,
     "CategoryType": "Weapon",
@@ -7967,7 +7967,7 @@
       }
     ]
   },
-  {
+  "139": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -8019,7 +8019,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 81
   },
-  {
+  "140": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -8071,7 +8071,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 139
   },
-  {
+  "141": {
     "ActivationDelay": 5,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -8123,7 +8123,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 55
   },
-  {
+  "142": {
     "ActivationDelay": 5,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -8175,7 +8175,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 141
   },
-  {
+  "143": {
     "ActivationDelay": 0,
     "Capacity": 110,
     "CategoryType": "Weapon",
@@ -8263,7 +8263,7 @@
       }
     ]
   },
-  {
+  "144": {
     "ActivationDelay": 0,
     "Capacity": 100,
     "CategoryType": "Weapon",
@@ -8315,7 +8315,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 87
   },
-  {
+  "145": {
     "ActivationDelay": 0,
     "Capacity": 110,
     "CategoryType": "Weapon",
@@ -8367,7 +8367,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 144
   },
-  {
+  "146": {
     "ActivationDelay": 0,
     "Capacity": 120,
     "CategoryType": "Weapon",
@@ -8419,7 +8419,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 145
   },
-  {
+  "147": {
     "ActivationDelay": 0,
     "Capacity": 130,
     "CategoryType": "Weapon",
@@ -8471,7 +8471,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 146
   },
-  {
+  "148": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -8523,7 +8523,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 125
   },
-  {
+  "149": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -8575,7 +8575,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 148
   },
-  {
+  "150": {
     "ActivationDelay": 0,
     "Capacity": 40,
     "CategoryType": "Weapon",
@@ -8627,7 +8627,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "151": {
     "ActivationDelay": 0,
     "Capacity": 2,
     "CategoryType": "Support",
@@ -8679,7 +8679,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 132
   },
-  {
+  "152": {
     "ActivationDelay": 0,
     "Capacity": 2,
     "CategoryType": "Support",
@@ -8731,7 +8731,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 151
   },
-  {
+  "153": {
     "ActivationDelay": 0,
     "Capacity": 3,
     "CategoryType": "Support",
@@ -8783,7 +8783,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 152
   },
-  {
+  "154": {
     "ActivationDelay": 0,
     "Capacity": 3,
     "CategoryType": "Support",
@@ -8835,7 +8835,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 153
   },
-  {
+  "155": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -8923,7 +8923,7 @@
       }
     ]
   },
-  {
+  "156": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -9011,7 +9011,7 @@
       }
     ]
   },
-  {
+  "157": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -9063,7 +9063,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 149
   },
-  {
+  "158": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -9115,7 +9115,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 157
   },
-  {
+  "159": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -9203,7 +9203,7 @@
       }
     ]
   },
-  {
+  "160": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -9291,7 +9291,7 @@
       }
     ]
   },
-  {
+  "161": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -9379,7 +9379,7 @@
       }
     ]
   },
-  {
+  "162": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -9431,7 +9431,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 140
   },
-  {
+  "163": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -9483,7 +9483,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 162
   },
-  {
+  "164": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -9535,7 +9535,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 163
   },
-  {
+  "165": {
     "ActivationDelay": 0,
     "Capacity": 45,
     "CategoryType": "Weapon",
@@ -9587,7 +9587,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 150
   },
-  {
+  "166": {
     "ActivationDelay": 0,
     "Capacity": 50,
     "CategoryType": "Weapon",
@@ -9639,7 +9639,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 165
   },
-  {
+  "167": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -9727,7 +9727,7 @@
       }
     ]
   },
-  {
+  "168": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -9815,7 +9815,7 @@
       }
     ]
   },
-  {
+  "169": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -9903,7 +9903,7 @@
       }
     ]
   },
-  {
+  "170": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -9991,7 +9991,7 @@
       }
     ]
   },
-  {
+  "171": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -10079,7 +10079,7 @@
       }
     ]
   },
-  {
+  "172": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -10167,7 +10167,7 @@
       }
     ]
   },
-  {
+  "173": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -10255,7 +10255,7 @@
       }
     ]
   },
-  {
+  "174": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -10343,7 +10343,7 @@
       }
     ]
   },
-  {
+  "175": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -10431,7 +10431,7 @@
       }
     ]
   },
-  {
+  "176": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -10519,7 +10519,7 @@
       }
     ]
   },
-  {
+  "177": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -10607,7 +10607,7 @@
       }
     ]
   },
-  {
+  "178": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -10695,7 +10695,7 @@
       }
     ]
   },
-  {
+  "179": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -10783,7 +10783,7 @@
       }
     ]
   },
-  {
+  "180": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -10871,7 +10871,7 @@
       }
     ]
   },
-  {
+  "181": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -10959,7 +10959,7 @@
       }
     ]
   },
-  {
+  "182": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -11047,7 +11047,7 @@
       }
     ]
   },
-  {
+  "183": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -11135,7 +11135,7 @@
       }
     ]
   },
-  {
+  "184": {
     "ActivationDelay": 0,
     "Capacity": 55,
     "CategoryType": "Weapon",
@@ -11187,7 +11187,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 166
   },
-  {
+  "185": {
     "ActivationDelay": 0,
     "Capacity": 5,
     "CategoryType": "Defence",
@@ -11239,7 +11239,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 131
   },
-  {
+  "186": {
     "ActivationDelay": 0,
     "Capacity": 6,
     "CategoryType": "Defence",
@@ -11291,7 +11291,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 185
   },
-  {
+  "187": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -11379,7 +11379,7 @@
       }
     ]
   },
-  {
+  "188": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -11467,7 +11467,7 @@
       }
     ]
   },
-  {
+  "189": {
     "ActivationDelay": 0,
     "Capacity": 140,
     "CategoryType": "Weapon",
@@ -11519,7 +11519,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 147
   },
-  {
+  "190": {
     "ActivationDelay": 0,
     "Capacity": 150,
     "CategoryType": "Weapon",
@@ -11571,7 +11571,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 189
   },
-  {
+  "191": {
     "ActivationDelay": 0,
     "Capacity": 160,
     "CategoryType": "Weapon",
@@ -11623,7 +11623,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 190
   },
-  {
+  "192": {
     "ActivationDelay": 0,
     "Capacity": 40,
     "CategoryType": "Support",
@@ -11675,7 +11675,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 51
   },
-  {
+  "193": {
     "ActivationDelay": 0,
     "Capacity": 45,
     "CategoryType": "Support",
@@ -11727,7 +11727,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 192
   },
-  {
+  "194": {
     "ActivationDelay": 0,
     "Capacity": 7,
     "CategoryType": "Defence",
@@ -11779,7 +11779,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 186
   },
-  {
+  "195": {
     "ActivationDelay": 0,
     "Capacity": 8,
     "CategoryType": "Defence",
@@ -11831,7 +11831,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 194
   },
-  {
+  "196": {
     "ActivationDelay": 0,
     "Capacity": 9,
     "CategoryType": "Defence",
@@ -11883,7 +11883,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 195
   },
-  {
+  "197": {
     "ActivationDelay": 0,
     "Capacity": 10,
     "CategoryType": "Defence",
@@ -11935,7 +11935,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 196
   },
-  {
+  "198": {
     "ActivationDelay": 0,
     "Capacity": 20,
     "CategoryType": "Defence",
@@ -11987,7 +11987,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 25
   },
-  {
+  "199": {
     "ActivationDelay": 0,
     "Capacity": 50,
     "CategoryType": "Support",
@@ -12039,7 +12039,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 193
   },
-  {
+  "200": {
     "ActivationDelay": 0,
     "Capacity": 55,
     "CategoryType": "Support",
@@ -12091,7 +12091,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 199
   },
-  {
+  "201": {
     "ActivationDelay": 0,
     "Capacity": 60,
     "CategoryType": "Support",
@@ -12143,7 +12143,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 200
   },
-  {
+  "202": {
     "ActivationDelay": 0,
     "Capacity": 21,
     "CategoryType": "Defence",
@@ -12195,7 +12195,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 198
   },
-  {
+  "203": {
     "ActivationDelay": 0,
     "Capacity": 22,
     "CategoryType": "Defence",
@@ -12247,7 +12247,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 202
   },
-  {
+  "204": {
     "ActivationDelay": 0,
     "Capacity": 30,
     "CategoryType": "Support",
@@ -12299,7 +12299,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "205": {
     "ActivationDelay": 0,
     "Capacity": 40,
     "CategoryType": "Support",
@@ -12351,7 +12351,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 204
   },
-  {
+  "206": {
     "ActivationDelay": 0,
     "Capacity": 50,
     "CategoryType": "Support",
@@ -12403,7 +12403,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 205
   },
-  {
+  "207": {
     "ActivationDelay": 0,
     "Capacity": 60,
     "CategoryType": "Support",
@@ -12455,7 +12455,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 206
   },
-  {
+  "208": {
     "ActivationDelay": 0,
     "Capacity": 70,
     "CategoryType": "Support",
@@ -12507,7 +12507,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 207
   },
-  {
+  "209": {
     "ActivationDelay": 0,
     "Capacity": 80,
     "CategoryType": "Support",
@@ -12559,7 +12559,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 208
   },
-  {
+  "210": {
     "ActivationDelay": 0,
     "Capacity": 90,
     "CategoryType": "Support",
@@ -12611,7 +12611,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 209
   },
-  {
+  "211": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -12663,7 +12663,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 164
   },
-  {
+  "212": {
     "ActivationDelay": 0,
     "Capacity": 5,
     "CategoryType": "Support",
@@ -12715,7 +12715,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 21
   },
-  {
+  "213": {
     "ActivationDelay": 0,
     "Capacity": 60,
     "CategoryType": "Weapon",
@@ -12767,7 +12767,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 184
   },
-  {
+  "214": {
     "ActivationDelay": 0,
     "Capacity": 65,
     "CategoryType": "Weapon",
@@ -12819,7 +12819,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 213
   },
-  {
+  "215": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -12871,7 +12871,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 158
   },
-  {
+  "216": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -12923,7 +12923,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 215
   },
-  {
+  "217": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -12975,7 +12975,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "219": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -13027,7 +13027,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "220": {
     "ActivationDelay": 0,
     "Capacity": 2,
     "CategoryType": "Support",
@@ -13079,7 +13079,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 219
   },
-  {
+  "221": {
     "ActivationDelay": 0,
     "Capacity": 40,
     "CategoryType": "Defence",
@@ -13131,7 +13131,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "222": {
     "ActivationDelay": 0,
     "Capacity": 30,
     "CategoryType": "Weapon",
@@ -13183,7 +13183,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "223": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -13235,7 +13235,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 507
   },
-  {
+  "224": {
     "ActivationDelay": 0,
     "Capacity": 3,
     "CategoryType": "Support",
@@ -13287,7 +13287,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 220
   },
-  {
+  "225": {
     "ActivationDelay": 0,
     "Capacity": 4,
     "CategoryType": "Support",
@@ -13339,7 +13339,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 224
   },
-  {
+  "226": {
     "ActivationDelay": 0,
     "Capacity": 5,
     "CategoryType": "Support",
@@ -13391,7 +13391,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 225
   },
-  {
+  "227": {
     "ActivationDelay": 0,
     "Capacity": 6,
     "CategoryType": "Support",
@@ -13443,7 +13443,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 226
   },
-  {
+  "228": {
     "ActivationDelay": 0,
     "Capacity": 7,
     "CategoryType": "Support",
@@ -13495,7 +13495,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 227
   },
-  {
+  "229": {
     "ActivationDelay": 0,
     "Capacity": 8,
     "CategoryType": "Support",
@@ -13547,7 +13547,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 228
   },
-  {
+  "230": {
     "ActivationDelay": 0,
     "Capacity": 9,
     "CategoryType": "Support",
@@ -13599,7 +13599,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 229
   },
-  {
+  "231": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -13651,7 +13651,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "232": {
     "ActivationDelay": 0,
     "Capacity": 25,
     "CategoryType": "Support",
@@ -13703,7 +13703,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "233": {
     "ActivationDelay": 0,
     "Capacity": 5,
     "CategoryType": "Resources",
@@ -13755,7 +13755,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "234": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -13843,7 +13843,7 @@
       }
     ]
   },
-  {
+  "235": {
     "ActivationDelay": 0,
     "Capacity": 170,
     "CategoryType": "Weapon",
@@ -13895,7 +13895,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 191
   },
-  {
+  "236": {
     "ActivationDelay": 0,
     "Capacity": 120,
     "CategoryType": "Weapon",
@@ -13983,7 +13983,7 @@
       }
     ]
   },
-  {
+  "237": {
     "ActivationDelay": 0,
     "Capacity": 70,
     "CategoryType": "Weapon",
@@ -14035,7 +14035,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 214
   },
-  {
+  "238": {
     "ActivationDelay": 0,
     "Capacity": 5,
     "CategoryType": "Resources",
@@ -14087,7 +14087,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "239": {
     "ActivationDelay": 0,
     "Capacity": 40,
     "CategoryType": "Weapon",
@@ -14139,7 +14139,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 222
   },
-  {
+  "240": {
     "ActivationDelay": 0,
     "Capacity": 1000000,
     "CategoryType": "Resources",
@@ -14191,7 +14191,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 100
   },
-  {
+  "241": {
     "ActivationDelay": 0,
     "Capacity": 1000000,
     "CategoryType": "Resources",
@@ -14243,7 +14243,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 102
   },
-  {
+  "242": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -14295,7 +14295,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 211
   },
-  {
+  "243": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -14347,7 +14347,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "244": {
     "ActivationDelay": 0,
     "Capacity": 150,
     "CategoryType": "Resources",
@@ -14399,7 +14399,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 15
   },
-  {
+  "245": {
     "ActivationDelay": 0,
     "Capacity": 200,
     "CategoryType": "Resources",
@@ -14451,7 +14451,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 244
   },
-  {
+  "246": {
     "ActivationDelay": 0,
     "Capacity": 23,
     "CategoryType": "Defence",
@@ -14503,7 +14503,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 203
   },
-  {
+  "247": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -14555,7 +14555,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "248": {
     "ActivationDelay": 0,
     "Capacity": 100,
     "CategoryType": "Support",
@@ -14607,7 +14607,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 3
   },
-  {
+  "249": {
     "ActivationDelay": 0,
     "Capacity": 120,
     "CategoryType": "Support",
@@ -14659,7 +14659,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 248
   },
-  {
+  "250": {
     "ActivationDelay": 0,
     "Capacity": 140,
     "CategoryType": "Support",
@@ -14711,7 +14711,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 249
   },
-  {
+  "251": {
     "ActivationDelay": 0,
     "Capacity": 160,
     "CategoryType": "Support",
@@ -14763,7 +14763,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 250
   },
-  {
+  "252": {
     "ActivationDelay": 0,
     "Capacity": 180,
     "CategoryType": "Support",
@@ -14815,7 +14815,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 251
   },
-  {
+  "253": {
     "ActivationDelay": 0,
     "Capacity": 200,
     "CategoryType": "Support",
@@ -14867,7 +14867,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 252
   },
-  {
+  "254": {
     "ActivationDelay": 0,
     "Capacity": 10,
     "CategoryType": "Defence",
@@ -14919,7 +14919,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 136
   },
-  {
+  "255": {
     "ActivationDelay": 0,
     "Capacity": 11,
     "CategoryType": "Defence",
@@ -14971,7 +14971,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 254
   },
-  {
+  "256": {
     "ActivationDelay": 0,
     "Capacity": 12,
     "CategoryType": "Defence",
@@ -15023,7 +15023,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 255
   },
-  {
+  "257": {
     "ActivationDelay": 0,
     "Capacity": 14,
     "CategoryType": "Defence",
@@ -15075,7 +15075,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 256
   },
-  {
+  "258": {
     "ActivationDelay": 0,
     "Capacity": 16,
     "CategoryType": "Defence",
@@ -15127,7 +15127,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 257
   },
-  {
+  "259": {
     "ActivationDelay": 0,
     "Capacity": 45,
     "CategoryType": "Weapon",
@@ -15215,7 +15215,7 @@
       }
     ]
   },
-  {
+  "260": {
     "ActivationDelay": 0,
     "Capacity": 60,
     "CategoryType": "Weapon",
@@ -15303,7 +15303,7 @@
       }
     ]
   },
-  {
+  "261": {
     "ActivationDelay": 0,
     "Capacity": 75,
     "CategoryType": "Weapon",
@@ -15391,7 +15391,7 @@
       }
     ]
   },
-  {
+  "262": {
     "ActivationDelay": 0,
     "Capacity": 150,
     "CategoryType": "Resources",
@@ -15443,7 +15443,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "263": {
     "ActivationDelay": 0,
     "Capacity": 4,
     "CategoryType": "Defence",
@@ -15495,7 +15495,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "264": {
     "ActivationDelay": 0,
     "Capacity": 230,
     "CategoryType": "Support",
@@ -15547,7 +15547,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 253
   },
-  {
+  "265": {
     "ActivationDelay": 0,
     "Capacity": 260,
     "CategoryType": "Support",
@@ -15599,7 +15599,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 264
   },
-  {
+  "266": {
     "ActivationDelay": 0,
     "Capacity": 300,
     "CategoryType": "Support",
@@ -15651,7 +15651,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 265
   },
-  {
+  "267": {
     "ActivationDelay": 0,
     "Capacity": 340,
     "CategoryType": "Support",
@@ -15703,7 +15703,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 266
   },
-  {
+  "268": {
     "ActivationDelay": 0,
     "Capacity": 380,
     "CategoryType": "Support",
@@ -15755,7 +15755,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 267
   },
-  {
+  "269": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -15807,7 +15807,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "270": {
     "ActivationDelay": 0,
     "Capacity": 5,
     "CategoryType": "Defence",
@@ -15859,7 +15859,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 263
   },
-  {
+  "271": {
     "ActivationDelay": 0,
     "Capacity": 7,
     "CategoryType": "Defence",
@@ -15911,7 +15911,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 270
   },
-  {
+  "272": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -15963,7 +15963,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "273": {
     "ActivationDelay": 0,
     "Capacity": 2,
     "CategoryType": "Support",
@@ -16015,7 +16015,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 272
   },
-  {
+  "274": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -16067,7 +16067,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "275": {
     "ActivationDelay": 0,
     "Capacity": 2,
     "CategoryType": "Support",
@@ -16119,7 +16119,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 274
   },
-  {
+  "276": {
     "ActivationDelay": 0,
     "Capacity": 2,
     "CategoryType": "Support",
@@ -16171,7 +16171,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 269
   },
-  {
+  "277": {
     "ActivationDelay": 0,
     "Capacity": 3,
     "CategoryType": "Support",
@@ -16223,7 +16223,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 276
   },
-  {
+  "278": {
     "ActivationDelay": 0,
     "Capacity": 4,
     "CategoryType": "Support",
@@ -16275,7 +16275,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 277
   },
-  {
+  "279": {
     "ActivationDelay": 0,
     "Capacity": 5,
     "CategoryType": "Support",
@@ -16327,7 +16327,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 278
   },
-  {
+  "280": {
     "ActivationDelay": 0,
     "Capacity": 6,
     "CategoryType": "Support",
@@ -16379,7 +16379,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 279
   },
-  {
+  "281": {
     "ActivationDelay": 0,
     "Capacity": 7,
     "CategoryType": "Support",
@@ -16431,7 +16431,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 280
   },
-  {
+  "282": {
     "ActivationDelay": 0,
     "Capacity": 8,
     "CategoryType": "Support",
@@ -16483,7 +16483,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 281
   },
-  {
+  "283": {
     "ActivationDelay": 0,
     "Capacity": 9,
     "CategoryType": "Support",
@@ -16535,7 +16535,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 282
   },
-  {
+  "284": {
     "ActivationDelay": 0,
     "Capacity": 15,
     "CategoryType": "Support",
@@ -16587,7 +16587,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 84
   },
-  {
+  "285": {
     "ActivationDelay": 0,
     "Capacity": 18,
     "CategoryType": "Support",
@@ -16639,7 +16639,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 284
   },
-  {
+  "286": {
     "ActivationDelay": 0,
     "Capacity": 21,
     "CategoryType": "Support",
@@ -16691,7 +16691,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 285
   },
-  {
+  "287": {
     "ActivationDelay": 0,
     "Capacity": 24,
     "CategoryType": "Support",
@@ -16743,7 +16743,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 286
   },
-  {
+  "288": {
     "ActivationDelay": 0,
     "Capacity": 27,
     "CategoryType": "Support",
@@ -16795,7 +16795,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 287
   },
-  {
+  "289": {
     "ActivationDelay": 0,
     "Capacity": 30,
     "CategoryType": "Support",
@@ -16847,7 +16847,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 288
   },
-  {
+  "290": {
     "ActivationDelay": 0,
     "Capacity": 150,
     "CategoryType": "Weapon",
@@ -16935,7 +16935,7 @@
       }
     ]
   },
-  {
+  "291": {
     "ActivationDelay": 0,
     "Capacity": 250,
     "CategoryType": "Resources",
@@ -16987,7 +16987,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 245
   },
-  {
+  "292": {
     "ActivationDelay": 0,
     "Capacity": 10,
     "CategoryType": "Defence",
@@ -17039,7 +17039,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 197
   },
-  {
+  "293": {
     "ActivationDelay": 0,
     "Capacity": 11,
     "CategoryType": "Defence",
@@ -17091,7 +17091,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 292
   },
-  {
+  "294": {
     "ActivationDelay": 0,
     "Capacity": 180,
     "CategoryType": "Weapon",
@@ -17143,7 +17143,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 235
   },
-  {
+  "295": {
     "ActivationDelay": 0,
     "Capacity": 75,
     "CategoryType": "Weapon",
@@ -17195,7 +17195,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 237
   },
-  {
+  "296": {
     "ActivationDelay": 0,
     "Capacity": 80,
     "CategoryType": "Weapon",
@@ -17247,7 +17247,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 295
   },
-  {
+  "297": {
     "ActivationDelay": 0,
     "Capacity": 100,
     "CategoryType": "Defence",
@@ -17299,7 +17299,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "298": {
     "ActivationDelay": 0,
     "Capacity": 12,
     "CategoryType": "Defence",
@@ -17351,7 +17351,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "299": {
     "ActivationDelay": 0,
     "Capacity": 5,
     "CategoryType": "Defence",
@@ -17403,7 +17403,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "301": {
     "ActivationDelay": 0,
     "Capacity": 8,
     "CategoryType": "Defence",
@@ -17455,7 +17455,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 271
   },
-  {
+  "302": {
     "ActivationDelay": 0,
     "Capacity": 8,
     "CategoryType": "Defence",
@@ -17507,7 +17507,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 301
   },
-  {
+  "303": {
     "ActivationDelay": 0,
     "Capacity": 9,
     "CategoryType": "Defence",
@@ -17559,7 +17559,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 302
   },
-  {
+  "304": {
     "ActivationDelay": 0,
     "Capacity": 9,
     "CategoryType": "Defence",
@@ -17611,7 +17611,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 303
   },
-  {
+  "305": {
     "ActivationDelay": 0,
     "Capacity": 10,
     "CategoryType": "Defence",
@@ -17663,7 +17663,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 304
   },
-  {
+  "306": {
     "ActivationDelay": 0,
     "Capacity": 15,
     "CategoryType": "Defence",
@@ -17715,7 +17715,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 298
   },
-  {
+  "307": {
     "ActivationDelay": 0,
     "Capacity": 18,
     "CategoryType": "Defence",
@@ -17767,7 +17767,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 306
   },
-  {
+  "308": {
     "ActivationDelay": 0,
     "Capacity": 21,
     "CategoryType": "Defence",
@@ -17819,7 +17819,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 307
   },
-  {
+  "309": {
     "ActivationDelay": 0,
     "Capacity": 24,
     "CategoryType": "Defence",
@@ -17871,7 +17871,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 308
   },
-  {
+  "310": {
     "ActivationDelay": 0,
     "Capacity": 27,
     "CategoryType": "Defence",
@@ -17923,7 +17923,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 309
   },
-  {
+  "311": {
     "ActivationDelay": 0,
     "Capacity": 30,
     "CategoryType": "Defence",
@@ -17975,7 +17975,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 310
   },
-  {
+  "312": {
     "ActivationDelay": 0,
     "Capacity": 33,
     "CategoryType": "Defence",
@@ -18027,7 +18027,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 311
   },
-  {
+  "313": {
     "ActivationDelay": 0,
     "Capacity": 36,
     "CategoryType": "Defence",
@@ -18079,7 +18079,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 312
   },
-  {
+  "314": {
     "ActivationDelay": 0,
     "Capacity": 39,
     "CategoryType": "Defence",
@@ -18131,7 +18131,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 313
   },
-  {
+  "315": {
     "ActivationDelay": 0,
     "Capacity": 8,
     "CategoryType": "Support",
@@ -18183,7 +18183,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "316": {
     "ActivationDelay": 0,
     "Capacity": 12,
     "CategoryType": "Support",
@@ -18235,7 +18235,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 315
   },
-  {
+  "317": {
     "ActivationDelay": 0,
     "Capacity": 16,
     "CategoryType": "Support",
@@ -18287,7 +18287,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 316
   },
-  {
+  "318": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -18375,7 +18375,7 @@
       }
     ]
   },
-  {
+  "319": {
     "ActivationDelay": 0,
     "Capacity": 50,
     "CategoryType": "Resources",
@@ -18427,7 +18427,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "320": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -18479,7 +18479,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "321": {
     "ActivationDelay": 0,
     "Capacity": 20,
     "CategoryType": "Defence",
@@ -18531,7 +18531,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "322": {
     "ActivationDelay": 0,
     "Capacity": 50,
     "CategoryType": "Weapon",
@@ -18583,7 +18583,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "323": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Resources",
@@ -18635,7 +18635,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "324": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -18723,7 +18723,7 @@
       }
     ]
   },
-  {
+  "325": {
     "ActivationDelay": 0,
     "Capacity": 4,
     "CategoryType": "Defence",
@@ -18775,7 +18775,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "326": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -18863,7 +18863,7 @@
       }
     ]
   },
-  {
+  "327": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -18951,7 +18951,7 @@
       }
     ]
   },
-  {
+  "328": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -19039,7 +19039,7 @@
       }
     ]
   },
-  {
+  "329": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -19127,7 +19127,7 @@
       }
     ]
   },
-  {
+  "330": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -19215,7 +19215,7 @@
       }
     ]
   },
-  {
+  "331": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -19303,7 +19303,7 @@
       }
     ]
   },
-  {
+  "332": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -19391,7 +19391,7 @@
       }
     ]
   },
-  {
+  "333": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -19479,7 +19479,7 @@
       }
     ]
   },
-  {
+  "334": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -19531,7 +19531,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 320
   },
-  {
+  "335": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -19583,7 +19583,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 334
   },
-  {
+  "336": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -19635,7 +19635,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 335
   },
-  {
+  "337": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -19687,7 +19687,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 336
   },
-  {
+  "338": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -19739,7 +19739,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 337
   },
-  {
+  "339": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -19791,7 +19791,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 338
   },
-  {
+  "340": {
     "ActivationDelay": 0,
     "Capacity": 5,
     "CategoryType": "Defence",
@@ -19843,7 +19843,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 325
   },
-  {
+  "341": {
     "ActivationDelay": 0,
     "Capacity": 6,
     "CategoryType": "Defence",
@@ -19895,7 +19895,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 340
   },
-  {
+  "342": {
     "ActivationDelay": 0,
     "Capacity": 7,
     "CategoryType": "Defence",
@@ -19947,7 +19947,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 341
   },
-  {
+  "343": {
     "ActivationDelay": 0,
     "Capacity": 8,
     "CategoryType": "Defence",
@@ -19999,7 +19999,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 342
   },
-  {
+  "344": {
     "ActivationDelay": 0,
     "Capacity": 9,
     "CategoryType": "Defence",
@@ -20051,7 +20051,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 343
   },
-  {
+  "347": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Resources",
@@ -20103,7 +20103,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 323
   },
-  {
+  "348": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Resources",
@@ -20155,7 +20155,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 347
   },
-  {
+  "349": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Resources",
@@ -20207,7 +20207,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 348
   },
-  {
+  "350": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Resources",
@@ -20259,7 +20259,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 349
   },
-  {
+  "351": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Resources",
@@ -20311,7 +20311,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 350
   },
-  {
+  "352": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Resources",
@@ -20363,7 +20363,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 351
   },
-  {
+  "353": {
     "ActivationDelay": 0,
     "Capacity": 18,
     "CategoryType": "Support",
@@ -20415,7 +20415,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 317
   },
-  {
+  "354": {
     "ActivationDelay": 0,
     "Capacity": 20,
     "CategoryType": "Support",
@@ -20467,7 +20467,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 353
   },
-  {
+  "356": {
     "ActivationDelay": 0,
     "Capacity": 23,
     "CategoryType": "Defence",
@@ -20519,7 +20519,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 321
   },
-  {
+  "357": {
     "ActivationDelay": 0,
     "Capacity": 25,
     "CategoryType": "Defence",
@@ -20571,7 +20571,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 356
   },
-  {
+  "358": {
     "ActivationDelay": 0,
     "Capacity": 28,
     "CategoryType": "Defence",
@@ -20623,7 +20623,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 357
   },
-  {
+  "359": {
     "ActivationDelay": 0,
     "Capacity": 30,
     "CategoryType": "Defence",
@@ -20675,7 +20675,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 358
   },
-  {
+  "360": {
     "ActivationDelay": 0,
     "Capacity": 32,
     "CategoryType": "Defence",
@@ -20727,7 +20727,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 359
   },
-  {
+  "361": {
     "ActivationDelay": 0,
     "Capacity": 34,
     "CategoryType": "Defence",
@@ -20779,7 +20779,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 360
   },
-  {
+  "362": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -20867,7 +20867,7 @@
       }
     ]
   },
-  {
+  "363": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -20955,7 +20955,7 @@
       }
     ]
   },
-  {
+  "364": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -21043,7 +21043,7 @@
       }
     ]
   },
-  {
+  "365": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -21131,7 +21131,7 @@
       }
     ]
   },
-  {
+  "366": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -21219,7 +21219,7 @@
       }
     ]
   },
-  {
+  "367": {
     "ActivationDelay": 0,
     "Capacity": 75,
     "CategoryType": "Resources",
@@ -21271,7 +21271,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 319
   },
-  {
+  "368": {
     "ActivationDelay": 0,
     "Capacity": 100,
     "CategoryType": "Resources",
@@ -21323,7 +21323,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 367
   },
-  {
+  "369": {
     "ActivationDelay": 0,
     "Capacity": 125,
     "CategoryType": "Resources",
@@ -21375,7 +21375,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 368
   },
-  {
+  "370": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -21427,7 +21427,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 339
   },
-  {
+  "371": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -21479,7 +21479,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 370
   },
-  {
+  "372": {
     "ActivationDelay": 0,
     "Capacity": 55,
     "CategoryType": "Weapon",
@@ -21531,7 +21531,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 322
   },
-  {
+  "373": {
     "ActivationDelay": 0,
     "Capacity": 60,
     "CategoryType": "Weapon",
@@ -21583,7 +21583,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 372
   },
-  {
+  "374": {
     "ActivationDelay": 0,
     "Capacity": 65,
     "CategoryType": "Weapon",
@@ -21635,7 +21635,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 373
   },
-  {
+  "375": {
     "ActivationDelay": 0,
     "Capacity": 70,
     "CategoryType": "Weapon",
@@ -21687,7 +21687,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 374
   },
-  {
+  "376": {
     "ActivationDelay": 0,
     "Capacity": 75,
     "CategoryType": "Weapon",
@@ -21739,7 +21739,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 375
   },
-  {
+  "377": {
     "ActivationDelay": 0,
     "Capacity": 80,
     "CategoryType": "Weapon",
@@ -21791,7 +21791,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 376
   },
-  {
+  "378": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Resources",
@@ -21843,7 +21843,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 352
   },
-  {
+  "379": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Resources",
@@ -21895,7 +21895,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 378
   },
-  {
+  "380": {
     "ActivationDelay": 0,
     "Capacity": 175,
     "CategoryType": "Weapon",
@@ -21983,7 +21983,7 @@
       }
     ]
   },
-  {
+  "381": {
     "ActivationDelay": 0,
     "Capacity": 200,
     "CategoryType": "Weapon",
@@ -22071,7 +22071,7 @@
       }
     ]
   },
-  {
+  "382": {
     "ActivationDelay": 0,
     "Capacity": 225,
     "CategoryType": "Weapon",
@@ -22159,7 +22159,7 @@
       }
     ]
   },
-  {
+  "383": {
     "ActivationDelay": 0,
     "Capacity": 250,
     "CategoryType": "Weapon",
@@ -22247,7 +22247,7 @@
       }
     ]
   },
-  {
+  "384": {
     "ActivationDelay": 0,
     "Capacity": 275,
     "CategoryType": "Weapon",
@@ -22335,7 +22335,7 @@
       }
     ]
   },
-  {
+  "385": {
     "ActivationDelay": 0,
     "Capacity": 20,
     "CategoryType": "Defence",
@@ -22387,7 +22387,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "386": {
     "ActivationDelay": 0,
     "Capacity": 50,
     "CategoryType": "Resources",
@@ -22439,7 +22439,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "387": {
     "ActivationDelay": 0,
     "Capacity": 100,
     "CategoryType": "Resources",
@@ -22491,7 +22491,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 386
   },
-  {
+  "388": {
     "ActivationDelay": 0,
     "Capacity": 150,
     "CategoryType": "Resources",
@@ -22543,7 +22543,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 387
   },
-  {
+  "389": {
     "ActivationDelay": 0,
     "Capacity": 200,
     "CategoryType": "Resources",
@@ -22595,7 +22595,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 388
   },
-  {
+  "390": {
     "ActivationDelay": 0,
     "Capacity": 250,
     "CategoryType": "Resources",
@@ -22647,7 +22647,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 389
   },
-  {
+  "391": {
     "ActivationDelay": 0,
     "Capacity": 85,
     "CategoryType": "Weapon",
@@ -22699,7 +22699,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 377
   },
-  {
+  "392": {
     "ActivationDelay": 0,
     "Capacity": 90,
     "CategoryType": "Weapon",
@@ -22751,7 +22751,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 391
   },
-  {
+  "393": {
     "ActivationDelay": 0,
     "Capacity": 95,
     "CategoryType": "Weapon",
@@ -22803,7 +22803,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 392
   },
-  {
+  "394": {
     "ActivationDelay": 0,
     "Capacity": 300,
     "CategoryType": "Resources",
@@ -22855,7 +22855,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 291
   },
-  {
+  "395": {
     "ActivationDelay": 0,
     "Capacity": 350,
     "CategoryType": "Resources",
@@ -22907,7 +22907,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 394
   },
-  {
+  "396": {
     "ActivationDelay": 0,
     "Capacity": 400,
     "CategoryType": "Resources",
@@ -22959,7 +22959,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 395
   },
-  {
+  "397": {
     "ActivationDelay": 0,
     "Capacity": 450,
     "CategoryType": "Resources",
@@ -23011,7 +23011,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 396
   },
-  {
+  "398": {
     "ActivationDelay": 0,
     "Capacity": 45,
     "CategoryType": "Weapon",
@@ -23063,7 +23063,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "399": {
     "ActivationDelay": 0,
     "Capacity": 50,
     "CategoryType": "Weapon",
@@ -23115,7 +23115,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 398
   },
-  {
+  "400": {
     "ActivationDelay": 0,
     "Capacity": 55,
     "CategoryType": "Weapon",
@@ -23167,7 +23167,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 399
   },
-  {
+  "401": {
     "ActivationDelay": 0,
     "Capacity": 60,
     "CategoryType": "Weapon",
@@ -23219,7 +23219,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 400
   },
-  {
+  "402": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -23271,7 +23271,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "403": {
     "ActivationDelay": 0,
     "Capacity": 20,
     "CategoryType": "Weapon",
@@ -23323,7 +23323,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "405": {
     "ActivationDelay": 0,
     "Capacity": 30,
     "CategoryType": "Weapon",
@@ -23375,7 +23375,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 108
   },
-  {
+  "406": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -23427,7 +23427,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "407": {
     "ActivationDelay": 0,
     "Capacity": 9,
     "CategoryType": "Support",
@@ -23479,7 +23479,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "408": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -23531,7 +23531,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "409": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -23583,7 +23583,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 408
   },
-  {
+  "410": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -23635,7 +23635,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 409
   },
-  {
+  "411": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -23687,7 +23687,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 402
   },
-  {
+  "412": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -23739,7 +23739,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 402
   },
-  {
+  "413": {
     "ActivationDelay": 0,
     "Capacity": 22,
     "CategoryType": "Defence",
@@ -23791,7 +23791,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "415": {
     "ActivationDelay": 0,
     "Capacity": 60,
     "CategoryType": "Weapon",
@@ -23879,7 +23879,7 @@
       }
     ]
   },
-  {
+  "416": {
     "ActivationDelay": 0,
     "Capacity": 200,
     "CategoryType": "Defence",
@@ -23931,7 +23931,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "417": {
     "ActivationDelay": 0,
     "Capacity": 60,
     "CategoryType": "Weapon",
@@ -24019,7 +24019,7 @@
       }
     ]
   },
-  {
+  "418": {
     "ActivationDelay": 0,
     "Capacity": 60,
     "CategoryType": "Weapon",
@@ -24107,7 +24107,7 @@
       }
     ]
   },
-  {
+  "419": {
     "ActivationDelay": 0,
     "Capacity": 420,
     "CategoryType": "Support",
@@ -24159,7 +24159,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 268
   },
-  {
+  "420": {
     "ActivationDelay": 0,
     "Capacity": 460,
     "CategoryType": "Support",
@@ -24211,7 +24211,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 419
   },
-  {
+  "421": {
     "ActivationDelay": 0,
     "Capacity": 30,
     "CategoryType": "Support",
@@ -24263,7 +24263,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "422": {
     "ActivationDelay": 0,
     "Capacity": 500,
     "CategoryType": "Resources",
@@ -24315,7 +24315,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "423": {
     "ActivationDelay": 0,
     "Capacity": 45,
     "CategoryType": "Defence",
@@ -24367,7 +24367,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 221
   },
-  {
+  "424": {
     "ActivationDelay": 0,
     "Capacity": 45,
     "CategoryType": "Defence",
@@ -24419,7 +24419,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 423
   },
-  {
+  "425": {
     "ActivationDelay": 0,
     "Capacity": 210,
     "CategoryType": "Defence",
@@ -24471,7 +24471,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 416
   },
-  {
+  "426": {
     "ActivationDelay": 0,
     "Capacity": 220,
     "CategoryType": "Defence",
@@ -24523,7 +24523,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 425
   },
-  {
+  "427": {
     "ActivationDelay": 0,
     "Capacity": 230,
     "CategoryType": "Defence",
@@ -24575,7 +24575,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 426
   },
-  {
+  "428": {
     "ActivationDelay": 0,
     "Capacity": 50,
     "CategoryType": "Defence",
@@ -24627,7 +24627,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 424
   },
-  {
+  "429": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -24679,7 +24679,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 216
   },
-  {
+  "430": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -24731,7 +24731,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 429
   },
-  {
+  "433": {
     "ActivationDelay": 0,
     "Capacity": 400,
     "CategoryType": "Resources",
@@ -24783,7 +24783,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 262
   },
-  {
+  "434": {
     "ActivationDelay": 5,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -24835,7 +24835,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 142
   },
-  {
+  "435": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -24923,7 +24923,7 @@
       }
     ]
   },
-  {
+  "436": {
     "ActivationDelay": 0,
     "Capacity": 40,
     "CategoryType": "Weapon",
@@ -24975,7 +24975,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 239
   },
-  {
+  "438": {
     "ActivationDelay": 0,
     "Capacity": 6,
     "CategoryType": "Defence",
@@ -25027,7 +25027,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "439": {
     "ActivationDelay": 0,
     "Capacity": 55,
     "CategoryType": "Defence",
@@ -25079,45 +25079,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 428
   },
-  {
-    "ActivationDelay": 0,
-    "Capacity": 9,
-    "CategoryType": "Support",
-    "Columns": 3,
-    "ConstructionSpriteId": 97,
-    "ConstructionTime": 3600,
-    "CooldownTime": 0,
-    "CraftDesignId": 0,
-    "DefaultDefenceBonus": 400,
-    "EnhancementType": null,
-    "ExteriorAssetId": 0,
-    "Flags": 8,
-    "FlipOnEnemyShip": true,
-    "ImageSpriteId": 9474,
-    "ImprovementAmounts": 0,
-    "InteriorAssetId": 0,
-    "ItemRank": 1,
-    "Level": 9,
-    "LogoSpriteId": 3149,
-    "ManufactureCapacity": 0,
-    "ManufactureRate": 0.0,
-    "ManufactureType": null,
-    "MaxCount": 0,
-    "MaxPowerGenerated": 0,
-    "MaxSystemPower": 0,
-    "Metadata": null,
-    "MinRange": 0,
-    "MinShipLevel": 2,
-    "MissileDesignId": 0,
-    "PriceString": "mineral:1000000",
-    "RandomImprovements": 0,
-    "Range": 0,
-    "RefillCostString": null,
-    "RefillUnitCost": 0,
-    "ReloadTime": 0,
-    "RequirementString": "item:779"
-  },
-  {
+  "441": {
     "ActivationDelay": 0,
     "Capacity": 9,
     "CategoryType": "Support",
@@ -25169,7 +25131,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 407
   },
-  {
+  "442": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -25221,7 +25183,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "443": {
     "ActivationDelay": 0,
     "Capacity": 60,
     "CategoryType": "Weapon",
@@ -25309,7 +25271,7 @@
       }
     ]
   },
-  {
+  "444": {
     "ActivationDelay": 0,
     "Capacity": 120,
     "CategoryType": "Weapon",
@@ -25397,7 +25359,7 @@
       }
     ]
   },
-  {
+  "445": {
     "ActivationDelay": 0,
     "Capacity": 135,
     "CategoryType": "Weapon",
@@ -25485,7 +25447,7 @@
       }
     ]
   },
-  {
+  "446": {
     "ActivationDelay": 0,
     "Capacity": 1500,
     "CategoryType": "Resources",
@@ -25537,7 +25499,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 422
   },
-  {
+  "447": {
     "ActivationDelay": 0,
     "Capacity": 6000,
     "CategoryType": "Resources",
@@ -25589,7 +25551,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 446
   },
-  {
+  "448": {
     "ActivationDelay": 0,
     "Capacity": 12000,
     "CategoryType": "Resources",
@@ -25641,7 +25603,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 447
   },
-  {
+  "449": {
     "ActivationDelay": 0,
     "Capacity": 15000,
     "CategoryType": "Resources",
@@ -25693,7 +25655,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 448
   },
-  {
+  "450": {
     "ActivationDelay": 0,
     "Capacity": 130,
     "CategoryType": "Weapon",
@@ -25781,7 +25743,7 @@
       }
     ]
   },
-  {
+  "451": {
     "ActivationDelay": 0,
     "Capacity": 140,
     "CategoryType": "Weapon",
@@ -25869,7 +25831,7 @@
       }
     ]
   },
-  {
+  "452": {
     "ActivationDelay": 0,
     "Capacity": 150,
     "CategoryType": "Weapon",
@@ -25957,7 +25919,7 @@
       }
     ]
   },
-  {
+  "453": {
     "ActivationDelay": 0,
     "Capacity": 160,
     "CategoryType": "Weapon",
@@ -26045,7 +26007,7 @@
       }
     ]
   },
-  {
+  "454": {
     "ActivationDelay": 0,
     "Capacity": 65,
     "CategoryType": "Weapon",
@@ -26133,7 +26095,7 @@
       }
     ]
   },
-  {
+  "455": {
     "ActivationDelay": 0,
     "Capacity": 70,
     "CategoryType": "Weapon",
@@ -26221,7 +26183,7 @@
       }
     ]
   },
-  {
+  "456": {
     "ActivationDelay": 0,
     "Capacity": 75,
     "CategoryType": "Weapon",
@@ -26309,7 +26271,7 @@
       }
     ]
   },
-  {
+  "457": {
     "ActivationDelay": 0,
     "Capacity": 80,
     "CategoryType": "Weapon",
@@ -26397,7 +26359,7 @@
       }
     ]
   },
-  {
+  "458": {
     "ActivationDelay": 0,
     "Capacity": 150,
     "CategoryType": "Weapon",
@@ -26485,7 +26447,7 @@
       }
     ]
   },
-  {
+  "459": {
     "ActivationDelay": 0,
     "Capacity": 160,
     "CategoryType": "Weapon",
@@ -26573,7 +26535,7 @@
       }
     ]
   },
-  {
+  "460": {
     "ActivationDelay": 0,
     "Capacity": 170,
     "CategoryType": "Weapon",
@@ -26661,7 +26623,7 @@
       }
     ]
   },
-  {
+  "461": {
     "ActivationDelay": 0,
     "Capacity": 180,
     "CategoryType": "Weapon",
@@ -26749,7 +26711,7 @@
       }
     ]
   },
-  {
+  "462": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -26801,7 +26763,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "463": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -26853,7 +26815,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 462
   },
-  {
+  "464": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -26905,7 +26867,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 463
   },
-  {
+  "465": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -26957,7 +26919,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 464
   },
-  {
+  "466": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -27009,7 +26971,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 465
   },
-  {
+  "467": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -27061,7 +27023,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 466
   },
-  {
+  "468": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -27113,7 +27075,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 467
   },
-  {
+  "469": {
     "ActivationDelay": 0,
     "Capacity": 10,
     "CategoryType": "Defence",
@@ -27165,7 +27127,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "470": {
     "ActivationDelay": 0,
     "Capacity": 10,
     "CategoryType": "Defence",
@@ -27217,7 +27179,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 469
   },
-  {
+  "471": {
     "ActivationDelay": 0,
     "Capacity": 10,
     "CategoryType": "Defence",
@@ -27269,7 +27231,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 469
   },
-  {
+  "472": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -27321,7 +27283,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "473": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -27373,7 +27335,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "474": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -27425,7 +27387,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "475": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -27477,7 +27439,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "476": {
     "ActivationDelay": 0,
     "Capacity": 8,
     "CategoryType": "Weapon",
@@ -27565,7 +27527,7 @@
       }
     ]
   },
-  {
+  "477": {
     "ActivationDelay": 0,
     "Capacity": 10,
     "CategoryType": "Weapon",
@@ -27653,7 +27615,7 @@
       }
     ]
   },
-  {
+  "478": {
     "ActivationDelay": 0,
     "Capacity": 12,
     "CategoryType": "Weapon",
@@ -27741,7 +27703,7 @@
       }
     ]
   },
-  {
+  "479": {
     "ActivationDelay": 0,
     "Capacity": 14,
     "CategoryType": "Weapon",
@@ -27829,7 +27791,7 @@
       }
     ]
   },
-  {
+  "480": {
     "ActivationDelay": 0,
     "Capacity": 16,
     "CategoryType": "Weapon",
@@ -27917,7 +27879,7 @@
       }
     ]
   },
-  {
+  "481": {
     "ActivationDelay": 0,
     "Capacity": 18,
     "CategoryType": "Weapon",
@@ -28005,7 +27967,7 @@
       }
     ]
   },
-  {
+  "482": {
     "ActivationDelay": 0,
     "Capacity": 20,
     "CategoryType": "Weapon",
@@ -28093,7 +28055,7 @@
       }
     ]
   },
-  {
+  "483": {
     "ActivationDelay": 0,
     "Capacity": 60,
     "CategoryType": "Weapon",
@@ -28181,7 +28143,7 @@
       }
     ]
   },
-  {
+  "484": {
     "ActivationDelay": 0,
     "Capacity": 65,
     "CategoryType": "Weapon",
@@ -28269,7 +28231,7 @@
       }
     ]
   },
-  {
+  "485": {
     "ActivationDelay": 0,
     "Capacity": 70,
     "CategoryType": "Weapon",
@@ -28357,7 +28319,7 @@
       }
     ]
   },
-  {
+  "486": {
     "ActivationDelay": 0,
     "Capacity": 75,
     "CategoryType": "Weapon",
@@ -28445,7 +28407,7 @@
       }
     ]
   },
-  {
+  "487": {
     "ActivationDelay": 0,
     "Capacity": 80,
     "CategoryType": "Weapon",
@@ -28533,7 +28495,7 @@
       }
     ]
   },
-  {
+  "488": {
     "ActivationDelay": 0,
     "Capacity": 85,
     "CategoryType": "Weapon",
@@ -28621,7 +28583,7 @@
       }
     ]
   },
-  {
+  "489": {
     "ActivationDelay": 0,
     "Capacity": 90,
     "CategoryType": "Weapon",
@@ -28709,7 +28671,7 @@
       }
     ]
   },
-  {
+  "490": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -28761,7 +28723,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 472
   },
-  {
+  "493": {
     "ActivationDelay": 0,
     "Capacity": 30,
     "CategoryType": "Support",
@@ -28813,7 +28775,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "494": {
     "ActivationDelay": 0,
     "Capacity": 20,
     "CategoryType": "Defence",
@@ -28865,7 +28827,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "496": {
     "ActivationDelay": 0,
     "Capacity": 150,
     "CategoryType": "Resources",
@@ -28917,7 +28879,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "497": {
     "ActivationDelay": 0,
     "Capacity": 150,
     "CategoryType": "Resources",
@@ -28969,7 +28931,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 496
   },
-  {
+  "498": {
     "ActivationDelay": 0,
     "Capacity": 150,
     "CategoryType": "Resources",
@@ -29021,7 +28983,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 496
   },
-  {
+  "505": {
     "ActivationDelay": 0,
     "Capacity": 9,
     "CategoryType": "Support",
@@ -29073,7 +29035,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "506": {
     "ActivationDelay": 0,
     "Capacity": 20,
     "CategoryType": "Defence",
@@ -29125,7 +29087,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "507": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -29177,7 +29139,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "509": {
     "ActivationDelay": 0,
     "Capacity": 30,
     "CategoryType": "Weapon",
@@ -29229,7 +29191,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "517": {
     "ActivationDelay": 60,
     "Capacity": 15,
     "CategoryType": "Superweapon",
@@ -29322,7 +29284,7 @@
       }
     ]
   },
-  {
+  "518": {
     "ActivationDelay": 0,
     "Capacity": 15,
     "CategoryType": "Superweapon",
@@ -29374,7 +29336,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "519": {
     "ActivationDelay": 0,
     "Capacity": 15,
     "CategoryType": "Superweapon",
@@ -29462,7 +29424,7 @@
       }
     ]
   },
-  {
+  "520": {
     "ActivationDelay": 0,
     "Capacity": 42,
     "CategoryType": "Defence",
@@ -29514,7 +29476,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 314
   },
-  {
+  "521": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -29602,7 +29564,7 @@
       }
     ]
   },
-  {
+  "522": {
     "ActivationDelay": 0,
     "Capacity": 80,
     "CategoryType": "Weapon",
@@ -29690,7 +29652,7 @@
       }
     ]
   },
-  {
+  "524": {
     "ActivationDelay": 0,
     "Capacity": 40,
     "CategoryType": "Weapon",
@@ -29742,7 +29704,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 436
   },
-  {
+  "525": {
     "ActivationDelay": 0,
     "Capacity": 85,
     "CategoryType": "Weapon",
@@ -29794,7 +29756,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 296
   },
-  {
+  "526": {
     "ActivationDelay": 0,
     "Capacity": 24,
     "CategoryType": "Defence",
@@ -29846,7 +29808,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 246
   },
-  {
+  "527": {
     "ActivationDelay": 0,
     "Capacity": 4,
     "CategoryType": "Resources",
@@ -29898,7 +29860,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 119
   },
-  {
+  "528": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -29986,7 +29948,7 @@
       }
     ]
   },
-  {
+  "529": {
     "ActivationDelay": 0,
     "Capacity": 160,
     "CategoryType": "Weapon",
@@ -30074,7 +30036,7 @@
       }
     ]
   },
-  {
+  "530": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -30162,7 +30124,7 @@
       }
     ]
   },
-  {
+  "532": {
     "ActivationDelay": 0,
     "Capacity": 22,
     "CategoryType": "Weapon",
@@ -30250,7 +30212,7 @@
       }
     ]
   },
-  {
+  "533": {
     "ActivationDelay": 0,
     "Capacity": 190,
     "CategoryType": "Weapon",
@@ -30338,7 +30300,7 @@
       }
     ]
   },
-  {
+  "534": {
     "ActivationDelay": 0,
     "Capacity": 95,
     "CategoryType": "Weapon",
@@ -30426,7 +30388,7 @@
       }
     ]
   },
-  {
+  "535": {
     "ActivationDelay": 0,
     "Capacity": 130,
     "CategoryType": "Weapon",
@@ -30514,7 +30476,7 @@
       }
     ]
   },
-  {
+  "536": {
     "ActivationDelay": 0,
     "Capacity": 500,
     "CategoryType": "Support",
@@ -30566,7 +30528,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 420
   },
-  {
+  "537": {
     "ActivationDelay": 0,
     "Capacity": 85,
     "CategoryType": "Weapon",
@@ -30654,7 +30616,7 @@
       }
     ]
   },
-  {
+  "541": {
     "ActivationDelay": 0,
     "Capacity": 100,
     "CategoryType": "Support",
@@ -30706,7 +30668,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 210
   },
-  {
+  "542": {
     "ActivationDelay": 0,
     "Capacity": 4,
     "CategoryType": "Resources",
@@ -30758,7 +30720,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 96
   },
-  {
+  "543": {
     "ActivationDelay": 0,
     "Capacity": 190,
     "CategoryType": "Weapon",
@@ -30810,7 +30772,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 294
   },
-  {
+  "544": {
     "ActivationDelay": 0,
     "Capacity": 60,
     "CategoryType": "Defence",
@@ -30862,7 +30824,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 439
   },
-  {
+  "545": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -30914,7 +30876,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 468
   },
-  {
+  "546": {
     "ActivationDelay": 0,
     "Capacity": 12,
     "CategoryType": "Defence",
@@ -30966,7 +30928,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 293
   },
-  {
+  "547": {
     "ActivationDelay": 0,
     "Capacity": 1350000,
     "CategoryType": "Resources",
@@ -31018,7 +30980,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 241
   },
-  {
+  "548": {
     "ActivationDelay": 0,
     "Capacity": 1350000,
     "CategoryType": "Resources",
@@ -31070,7 +31032,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 240
   },
-  {
+  "549": {
     "ActivationDelay": 5,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -31122,7 +31084,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 434
   },
-  {
+  "550": {
     "ActivationDelay": 0,
     "Capacity": 10,
     "CategoryType": "Defence",
@@ -31174,7 +31136,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 305
   },
-  {
+  "551": {
     "ActivationDelay": 0,
     "Capacity": 17,
     "CategoryType": "Defence",
@@ -31226,7 +31188,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 258
   },
-  {
+  "552": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -31278,7 +31240,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 242
   },
-  {
+  "557": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -31330,7 +31292,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 41
   },
-  {
+  "558": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -31382,7 +31344,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 430
   },
-  {
+  "559": {
     "ActivationDelay": 0,
     "Capacity": 500,
     "CategoryType": "Resources",
@@ -31434,7 +31396,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 397
   },
-  {
+  "560": {
     "ActivationDelay": 0,
     "Capacity": 240,
     "CategoryType": "Defence",
@@ -31486,7 +31448,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 427
   },
-  {
+  "561": {
     "ActivationDelay": 0,
     "Capacity": 65,
     "CategoryType": "Support",
@@ -31538,7 +31500,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 201
   },
-  {
+  "562": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -31590,311 +31552,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
-    "ActivationDelay": 0,
-    "Capacity": 0,
-    "CategoryType": "Weapon",
-    "Columns": 3,
-    "ConstructionSpriteId": 97,
-    "ConstructionTime": 64800,
-    "CooldownTime": 0,
-    "CraftDesignId": 0,
-    "DefaultDefenceBonus": 0,
-    "EnhancementType": "Weapon",
-    "ExteriorAssetId": 0,
-    "Flags": 11,
-    "FlipOnEnemyShip": true,
-    "ImageSpriteId": 14642,
-    "ImprovementAmounts": 0,
-    "InteriorAssetId": 0,
-    "ItemRank": 1,
-    "Level": 9,
-    "LogoSpriteId": 105,
-    "ManufactureCapacity": 5000,
-    "ManufactureRate": 0.19444444,
-    "ManufactureType": "Gas",
-    "MaxCount": 0,
-    "MaxPowerGenerated": 0,
-    "MaxSystemPower": 2,
-    "Metadata": null,
-    "MinRange": 0,
-    "MinShipLevel": 7,
-    "MissileDesignId": 1,
-    "PriceString": "mineral:200000",
-    "RandomImprovements": 0,
-    "Range": 0,
-    "RefillCostString": null,
-    "RefillUnitCost": 0,
-    "ReloadTime": 200,
-    "RequirementString": "research:167"
-  },
-  {
-    "ActivationDelay": 0,
-    "Capacity": 0,
-    "CategoryType": "Weapon",
-    "Columns": 3,
-    "ConstructionSpriteId": 97,
-    "ConstructionTime": 86400,
-    "CooldownTime": 0,
-    "CraftDesignId": 0,
-    "DefaultDefenceBonus": 0,
-    "EnhancementType": "Weapon",
-    "ExteriorAssetId": 0,
-    "Flags": 11,
-    "FlipOnEnemyShip": true,
-    "ImageSpriteId": 14651,
-    "ImprovementAmounts": 0,
-    "InteriorAssetId": 0,
-    "ItemRank": 1,
-    "Level": 10,
-    "LogoSpriteId": 105,
-    "ManufactureCapacity": 8000,
-    "ManufactureRate": 0.19444444,
-    "ManufactureType": "Gas",
-    "MaxCount": 0,
-    "MaxPowerGenerated": 0,
-    "MaxSystemPower": 2,
-    "Metadata": null,
-    "MinRange": 0,
-    "MinShipLevel": 8,
-    "MissileDesignId": 1,
-    "PriceString": "mineral:400000",
-    "RandomImprovements": 0,
-    "Range": 0,
-    "RefillCostString": null,
-    "RefillUnitCost": 0,
-    "ReloadTime": 195,
-    "RequirementString": "research:167"
-  },
-  {
-    "ActivationDelay": 0,
-    "Capacity": 0,
-    "CategoryType": "Weapon",
-    "Columns": 3,
-    "ConstructionSpriteId": 97,
-    "ConstructionTime": 172800,
-    "CooldownTime": 0,
-    "CraftDesignId": 0,
-    "DefaultDefenceBonus": 0,
-    "EnhancementType": "Weapon",
-    "ExteriorAssetId": 0,
-    "Flags": 11,
-    "FlipOnEnemyShip": true,
-    "ImageSpriteId": 14660,
-    "ImprovementAmounts": 0,
-    "InteriorAssetId": 0,
-    "ItemRank": 1,
-    "Level": 11,
-    "LogoSpriteId": 105,
-    "ManufactureCapacity": 15000,
-    "ManufactureRate": 0.19444444,
-    "ManufactureType": "Gas",
-    "MaxCount": 0,
-    "MaxPowerGenerated": 0,
-    "MaxSystemPower": 2,
-    "Metadata": null,
-    "MinRange": 0,
-    "MinShipLevel": 9,
-    "MissileDesignId": 1,
-    "PriceString": "mineral:800000",
-    "RandomImprovements": 0,
-    "Range": 0,
-    "RefillCostString": null,
-    "RefillUnitCost": 0,
-    "ReloadTime": 190,
-    "RequirementString": "research:167"
-  },
-  {
-    "ActivationDelay": 0,
-    "Capacity": 0,
-    "CategoryType": "Weapon",
-    "Columns": 3,
-    "ConstructionSpriteId": 97,
-    "ConstructionTime": 259200,
-    "CooldownTime": 0,
-    "CraftDesignId": 0,
-    "DefaultDefenceBonus": 0,
-    "EnhancementType": "Weapon",
-    "ExteriorAssetId": 0,
-    "Flags": 11,
-    "FlipOnEnemyShip": true,
-    "ImageSpriteId": 14669,
-    "ImprovementAmounts": 0,
-    "InteriorAssetId": 0,
-    "ItemRank": 1,
-    "Level": 12,
-    "LogoSpriteId": 105,
-    "ManufactureCapacity": 20000,
-    "ManufactureRate": 0.19444444,
-    "ManufactureType": "Gas",
-    "MaxCount": 0,
-    "MaxPowerGenerated": 0,
-    "MaxSystemPower": 2,
-    "Metadata": null,
-    "MinRange": 0,
-    "MinShipLevel": 10,
-    "MissileDesignId": 1,
-    "PriceString": "mineral:1600000",
-    "RandomImprovements": 0,
-    "Range": 0,
-    "RefillCostString": null,
-    "RefillUnitCost": 0,
-    "ReloadTime": 185,
-    "RequirementString": "research:167"
-  },
-  {
-    "ActivationDelay": 0,
-    "Capacity": 0,
-    "CategoryType": "Weapon",
-    "Columns": 3,
-    "ConstructionSpriteId": 97,
-    "ConstructionTime": 345600,
-    "CooldownTime": 0,
-    "CraftDesignId": 0,
-    "DefaultDefenceBonus": 0,
-    "EnhancementType": "Weapon",
-    "ExteriorAssetId": 0,
-    "Flags": 11,
-    "FlipOnEnemyShip": true,
-    "ImageSpriteId": 14678,
-    "ImprovementAmounts": 0,
-    "InteriorAssetId": 0,
-    "ItemRank": 1,
-    "Level": 13,
-    "LogoSpriteId": 105,
-    "ManufactureCapacity": 25000,
-    "ManufactureRate": 0.19444444,
-    "ManufactureType": "Gas",
-    "MaxCount": 0,
-    "MaxPowerGenerated": 0,
-    "MaxSystemPower": 2,
-    "Metadata": null,
-    "MinRange": 0,
-    "MinShipLevel": 10,
-    "MissileDesignId": 1,
-    "PriceString": "mineral:1800000",
-    "RandomImprovements": 0,
-    "Range": 0,
-    "RefillCostString": null,
-    "RefillUnitCost": 0,
-    "ReloadTime": 180,
-    "RequirementString": "research:167"
-  },
-  {
-    "ActivationDelay": 0,
-    "Capacity": 0,
-    "CategoryType": "Weapon",
-    "Columns": 3,
-    "ConstructionSpriteId": 97,
-    "ConstructionTime": 432000,
-    "CooldownTime": 0,
-    "CraftDesignId": 0,
-    "DefaultDefenceBonus": 0,
-    "EnhancementType": "Weapon",
-    "ExteriorAssetId": 0,
-    "Flags": 11,
-    "FlipOnEnemyShip": true,
-    "ImageSpriteId": 14687,
-    "ImprovementAmounts": 0,
-    "InteriorAssetId": 0,
-    "ItemRank": 1,
-    "Level": 14,
-    "LogoSpriteId": 105,
-    "ManufactureCapacity": 40000,
-    "ManufactureRate": 0.19444444,
-    "ManufactureType": "Gas",
-    "MaxCount": 0,
-    "MaxPowerGenerated": 0,
-    "MaxSystemPower": 2,
-    "Metadata": null,
-    "MinRange": 0,
-    "MinShipLevel": 11,
-    "MissileDesignId": 1,
-    "PriceString": "mineral:2100000",
-    "RandomImprovements": 0,
-    "Range": 0,
-    "RefillCostString": null,
-    "RefillUnitCost": 0,
-    "ReloadTime": 175,
-    "RequirementString": "research:167"
-  },
-  {
-    "ActivationDelay": 0,
-    "Capacity": 0,
-    "CategoryType": "Weapon",
-    "Columns": 3,
-    "ConstructionSpriteId": 97,
-    "ConstructionTime": 475200,
-    "CooldownTime": 0,
-    "CraftDesignId": 0,
-    "DefaultDefenceBonus": 0,
-    "EnhancementType": "Weapon",
-    "ExteriorAssetId": 0,
-    "Flags": 11,
-    "FlipOnEnemyShip": true,
-    "ImageSpriteId": 14696,
-    "ImprovementAmounts": 0,
-    "InteriorAssetId": 0,
-    "ItemRank": 1,
-    "Level": 15,
-    "LogoSpriteId": 105,
-    "ManufactureCapacity": 50000,
-    "ManufactureRate": 0.19444444,
-    "ManufactureType": "Gas",
-    "MaxCount": 0,
-    "MaxPowerGenerated": 0,
-    "MaxSystemPower": 2,
-    "Metadata": null,
-    "MinRange": 0,
-    "MinShipLevel": 11,
-    "MissileDesignId": 1,
-    "PriceString": "mineral:2300000",
-    "RandomImprovements": 0,
-    "Range": 0,
-    "RefillCostString": null,
-    "RefillUnitCost": 0,
-    "ReloadTime": 170,
-    "RequirementString": "research:167"
-  },
-  {
-    "ActivationDelay": 0,
-    "Capacity": 0,
-    "CategoryType": "Weapon",
-    "Columns": 3,
-    "ConstructionSpriteId": 97,
-    "ConstructionTime": 518400,
-    "CooldownTime": 0,
-    "CraftDesignId": 0,
-    "DefaultDefenceBonus": 0,
-    "EnhancementType": "Weapon",
-    "ExteriorAssetId": 0,
-    "Flags": 11,
-    "FlipOnEnemyShip": true,
-    "ImageSpriteId": 14705,
-    "ImprovementAmounts": 0,
-    "InteriorAssetId": 0,
-    "ItemRank": 1,
-    "Level": 16,
-    "LogoSpriteId": 105,
-    "ManufactureCapacity": 65000,
-    "ManufactureRate": 0.22222222,
-    "ManufactureType": "Gas",
-    "MaxCount": 0,
-    "MaxPowerGenerated": 0,
-    "MaxSystemPower": 2,
-    "Metadata": null,
-    "MinRange": 0,
-    "MinShipLevel": 12,
-    "MissileDesignId": 1,
-    "PriceString": "mineral:2800000",
-    "RandomImprovements": 0,
-    "Range": 0,
-    "RefillCostString": null,
-    "RefillUnitCost": 0,
-    "ReloadTime": 165,
-    "RequirementString": "research:167"
-  },
-  {
+  "579": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -31946,7 +31604,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 562
   },
-  {
+  "587": {
     "ActivationDelay": 0,
     "Capacity": 90,
     "CategoryType": "Weapon",
@@ -32034,7 +31692,7 @@
       }
     ]
   },
-  {
+  "588": {
     "ActivationDelay": 0,
     "Capacity": 95,
     "CategoryType": "Weapon",
@@ -32122,7 +31780,7 @@
       }
     ]
   },
-  {
+  "598": {
     "ActivationDelay": 0,
     "Capacity": 12,
     "CategoryType": "Defence",
@@ -32174,7 +31832,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 550
   },
-  {
+  "599": {
     "ActivationDelay": 0,
     "Capacity": 8,
     "CategoryType": "Defence",
@@ -32226,7 +31884,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 438
   },
-  {
+  "602": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -32278,7 +31936,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "603": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -32366,7 +32024,7 @@
       }
     ]
   },
-  {
+  "604": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -32454,7 +32112,7 @@
       }
     ]
   },
-  {
+  "605": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -32542,7 +32200,7 @@
       }
     ]
   },
-  {
+  "606": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -32630,7 +32288,7 @@
       }
     ]
   },
-  {
+  "607": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -32718,7 +32376,7 @@
       }
     ]
   },
-  {
+  "608": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -32806,7 +32464,7 @@
       }
     ]
   },
-  {
+  "611": {
     "ActivationDelay": 0,
     "Capacity": 2,
     "CategoryType": "Support",
@@ -32858,7 +32516,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 473
   },
-  {
+  "612": {
     "ActivationDelay": 0,
     "Capacity": 3,
     "CategoryType": "Support",
@@ -32910,7 +32568,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 611
   },
-  {
+  "613": {
     "ActivationDelay": 0,
     "Capacity": 4,
     "CategoryType": "Support",
@@ -32962,7 +32620,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 612
   },
-  {
+  "614": {
     "ActivationDelay": 0,
     "Capacity": 5,
     "CategoryType": "Support",
@@ -33014,7 +32672,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 613
   },
-  {
+  "615": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -33066,7 +32724,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 474
   },
-  {
+  "616": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -33118,7 +32776,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 615
   },
-  {
+  "617": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -33170,7 +32828,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 616
   },
-  {
+  "618": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -33222,7 +32880,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 617
   },
-  {
+  "619": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -33274,7 +32932,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 618
   },
-  {
+  "620": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -33326,7 +32984,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 619
   },
-  {
+  "636": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Defence",
@@ -33378,7 +33036,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "637": {
     "ActivationDelay": 0,
     "Capacity": 2,
     "CategoryType": "Defence",
@@ -33430,7 +33088,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 636
   },
-  {
+  "638": {
     "ActivationDelay": 0,
     "Capacity": 5,
     "CategoryType": "Defence",
@@ -33482,7 +33140,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 637
   },
-  {
+  "639": {
     "ActivationDelay": 0,
     "Capacity": 10,
     "CategoryType": "Defence",
@@ -33534,7 +33192,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 638
   },
-  {
+  "640": {
     "ActivationDelay": 0,
     "Capacity": 25,
     "CategoryType": "Defence",
@@ -33586,7 +33244,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 639
   },
-  {
+  "659": {
     "ActivationDelay": 0,
     "Capacity": 70,
     "CategoryType": "Support",
@@ -33638,7 +33296,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 561
   },
-  {
+  "661": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -33726,45 +33384,7 @@
       }
     ]
   },
-  {
-    "ActivationDelay": 0,
-    "Capacity": 0,
-    "CategoryType": "Weapon",
-    "Columns": 3,
-    "ConstructionSpriteId": 97,
-    "ConstructionTime": 604800,
-    "CooldownTime": 0,
-    "CraftDesignId": 0,
-    "DefaultDefenceBonus": 0,
-    "EnhancementType": "Weapon",
-    "ExteriorAssetId": 0,
-    "Flags": 11,
-    "FlipOnEnemyShip": true,
-    "ImageSpriteId": 21895,
-    "ImprovementAmounts": 0,
-    "InteriorAssetId": 0,
-    "ItemRank": 1,
-    "Level": 17,
-    "LogoSpriteId": 105,
-    "ManufactureCapacity": 85000,
-    "ManufactureRate": 0.25,
-    "ManufactureType": "Gas",
-    "MaxCount": 0,
-    "MaxPowerGenerated": 0,
-    "MaxSystemPower": 2,
-    "Metadata": null,
-    "MinRange": 0,
-    "MinShipLevel": 13,
-    "MissileDesignId": 1,
-    "PriceString": "mineral:3000000",
-    "RandomImprovements": 0,
-    "Range": 0,
-    "RefillCostString": null,
-    "RefillUnitCost": 0,
-    "ReloadTime": 160,
-    "RequirementString": "research:167"
-  },
-  {
+  "664": {
     "ActivationDelay": 0,
     "Capacity": 4,
     "CategoryType": "Resources",
@@ -33816,7 +33436,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 542
   },
-  {
+  "665": {
     "ActivationDelay": 0,
     "Capacity": 4,
     "CategoryType": "Resources",
@@ -33868,7 +33488,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 664
   },
-  {
+  "666": {
     "ActivationDelay": 0,
     "Capacity": 4,
     "CategoryType": "Resources",
@@ -33920,7 +33540,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 527
   },
-  {
+  "667": {
     "ActivationDelay": 0,
     "Capacity": 4,
     "CategoryType": "Resources",
@@ -33972,7 +33592,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 666
   },
-  {
+  "669": {
     "ActivationDelay": 0,
     "Capacity": 14,
     "CategoryType": "Defence",
@@ -34024,7 +33644,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 598
   },
-  {
+  "671": {
     "ActivationDelay": 0,
     "Capacity": 250,
     "CategoryType": "Defence",
@@ -34076,7 +33696,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 560
   },
-  {
+  "674": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -34128,7 +33748,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 558
   },
-  {
+  "679": {
     "ActivationDelay": 0,
     "Capacity": 500,
     "CategoryType": "Resources",
@@ -34180,7 +33800,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 433
   },
-  {
+  "680": {
     "ActivationDelay": 0,
     "Capacity": 18,
     "CategoryType": "Defence",
@@ -34232,7 +33852,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 551
   },
-  {
+  "686": {
     "ActivationDelay": 0,
     "Capacity": 30,
     "CategoryType": "Weapon",
@@ -34284,7 +33904,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "688": {
     "ActivationDelay": 0,
     "Capacity": 70,
     "CategoryType": "Weapon",
@@ -34336,7 +33956,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "689": {
     "ActivationDelay": 0,
     "Capacity": 75,
     "CategoryType": "Weapon",
@@ -34388,7 +34008,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 688
   },
-  {
+  "690": {
     "ActivationDelay": 0,
     "Capacity": 80,
     "CategoryType": "Weapon",
@@ -34440,7 +34060,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 689
   },
-  {
+  "691": {
     "ActivationDelay": 0,
     "Capacity": 85,
     "CategoryType": "Weapon",
@@ -34492,7 +34112,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 690
   },
-  {
+  "692": {
     "ActivationDelay": 0,
     "Capacity": 40,
     "CategoryType": "Weapon",
@@ -34544,7 +34164,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "693": {
     "ActivationDelay": 0,
     "Capacity": 50,
     "CategoryType": "Weapon",
@@ -34596,7 +34216,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "694": {
     "ActivationDelay": 0,
     "Capacity": 60,
     "CategoryType": "Weapon",
@@ -34648,7 +34268,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 693
   },
-  {
+  "695": {
     "ActivationDelay": 0,
     "Capacity": 70,
     "CategoryType": "Weapon",
@@ -34700,7 +34320,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 694
   },
-  {
+  "696": {
     "ActivationDelay": 0,
     "Capacity": 80,
     "CategoryType": "Weapon",
@@ -34752,7 +34372,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 695
   },
-  {
+  "697": {
     "ActivationDelay": 0,
     "Capacity": 50,
     "CategoryType": "Weapon",
@@ -34804,7 +34424,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 692
   },
-  {
+  "698": {
     "ActivationDelay": 0,
     "Capacity": 60,
     "CategoryType": "Weapon",
@@ -34856,7 +34476,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 697
   },
-  {
+  "699": {
     "ActivationDelay": 0,
     "Capacity": 70,
     "CategoryType": "Weapon",
@@ -34908,7 +34528,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 698
   },
-  {
+  "700": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -34996,7 +34616,7 @@
       }
     ]
   },
-  {
+  "701": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -35084,7 +34704,7 @@
       }
     ]
   },
-  {
+  "702": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -35172,7 +34792,7 @@
       }
     ]
   },
-  {
+  "703": {
     "ActivationDelay": 20,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -35224,7 +34844,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "704": {
     "ActivationDelay": 0,
     "Capacity": 25,
     "CategoryType": "Superweapon",
@@ -35276,7 +34896,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "705": {
     "ActivationDelay": 0,
     "Capacity": 3,
     "CategoryType": "Defence",
@@ -35328,7 +34948,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "706": {
     "ActivationDelay": 0,
     "Capacity": 3,
     "CategoryType": "Defence",
@@ -35380,7 +35000,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "707": {
     "ActivationDelay": 0,
     "Capacity": 40,
     "CategoryType": "Weapon",
@@ -35432,7 +35052,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "708": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -35520,7 +35140,7 @@
       }
     ]
   },
-  {
+  "709": {
     "ActivationDelay": 60,
     "Capacity": 5,
     "CategoryType": "Superweapon",
@@ -35608,7 +35228,7 @@
       }
     ]
   },
-  {
+  "710": {
     "ActivationDelay": 60,
     "Capacity": 8,
     "CategoryType": "Superweapon",
@@ -35696,7 +35316,7 @@
       }
     ]
   },
-  {
+  "711": {
     "ActivationDelay": 0,
     "Capacity": 5,
     "CategoryType": "Superweapon",
@@ -35748,7 +35368,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "712": {
     "ActivationDelay": 0,
     "Capacity": 8,
     "CategoryType": "Superweapon",
@@ -35800,7 +35420,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "713": {
     "ActivationDelay": 0,
     "Capacity": 5,
     "CategoryType": "Superweapon",
@@ -35888,7 +35508,7 @@
       }
     ]
   },
-  {
+  "714": {
     "ActivationDelay": 0,
     "Capacity": 8,
     "CategoryType": "Superweapon",
@@ -35976,7 +35596,7 @@
       }
     ]
   },
-  {
+  "715": {
     "ActivationDelay": 0,
     "Capacity": 300,
     "CategoryType": "Weapon",
@@ -36064,7 +35684,7 @@
       }
     ]
   },
-  {
+  "716": {
     "ActivationDelay": 0,
     "Capacity": 22,
     "CategoryType": "Support",
@@ -36116,7 +35736,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 354
   },
-  {
+  "717": {
     "ActivationDelay": 0,
     "Capacity": 25,
     "CategoryType": "Support",
@@ -36168,7 +35788,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 354
   },
-  {
+  "718": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -36256,7 +35876,7 @@
       }
     ]
   },
-  {
+  "719": {
     "ActivationDelay": 0,
     "Capacity": 135,
     "CategoryType": "Resources",
@@ -36308,7 +35928,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 369
   },
-  {
+  "720": {
     "ActivationDelay": 0,
     "Capacity": 150,
     "CategoryType": "Resources",
@@ -36360,7 +35980,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 719
   },
-  {
+  "721": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -36412,7 +36032,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 371
   },
-  {
+  "722": {
     "ActivationDelay": 0,
     "Capacity": 35,
     "CategoryType": "Defence",
@@ -36464,7 +36084,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 360
   },
-  {
+  "724": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Resources",
@@ -36516,7 +36136,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 379
   },
-  {
+  "725": {
     "ActivationDelay": 0,
     "Capacity": 10,
     "CategoryType": "Defence",
@@ -36568,7 +36188,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 344
   },
-  {
+  "726": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -36656,7 +36276,7 @@
       }
     ]
   },
-  {
+  "727": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -36744,7 +36364,7 @@
       }
     ]
   },
-  {
+  "728": {
     "ActivationDelay": 0,
     "Capacity": 30,
     "CategoryType": "Defence",
@@ -36796,7 +36416,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 385
   },
-  {
+  "729": {
     "ActivationDelay": 0,
     "Capacity": 40,
     "CategoryType": "Defence",
@@ -36848,7 +36468,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 729
   },
-  {
+  "730": {
     "ActivationDelay": 0,
     "Capacity": 300,
     "CategoryType": "Resources",
@@ -36900,7 +36520,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 390
   },
-  {
+  "731": {
     "ActivationDelay": 0,
     "Capacity": 70,
     "CategoryType": "Weapon",
@@ -36952,7 +36572,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 401
   },
-  {
+  "732": {
     "ActivationDelay": 0,
     "Capacity": 1,
     "CategoryType": "Support",
@@ -37004,7 +36624,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 410
   },
-  {
+  "733": {
     "ActivationDelay": 0,
     "Capacity": 30,
     "CategoryType": "Weapon",
@@ -37056,7 +36676,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 403
   },
-  {
+  "734": {
     "ActivationDelay": 0,
     "Capacity": 10,
     "CategoryType": "Defence",
@@ -37108,7 +36728,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 725
   },
-  {
+  "735": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -37196,7 +36816,7 @@
       }
     ]
   },
-  {
+  "736": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -37284,7 +36904,7 @@
       }
     ]
   },
-  {
+  "737": {
     "ActivationDelay": 0,
     "Capacity": 50,
     "CategoryType": "Resources",
@@ -37336,7 +36956,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "738": {
     "ActivationDelay": 0,
     "Capacity": 75,
     "CategoryType": "Resources",
@@ -37388,7 +37008,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 737
   },
-  {
+  "739": {
     "ActivationDelay": 0,
     "Capacity": 85,
     "CategoryType": "Resources",
@@ -37440,7 +37060,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 738
   },
-  {
+  "740": {
     "ActivationDelay": 0,
     "Capacity": 100,
     "CategoryType": "Resources",
@@ -37492,7 +37112,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 739
   },
-  {
+  "741": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Resources",
@@ -37544,7 +37164,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "742": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -37632,7 +37252,7 @@
       }
     ]
   },
-  {
+  "743": {
     "ActivationDelay": 0,
     "Capacity": 25,
     "CategoryType": "Defence",
@@ -37684,7 +37304,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 526
   },
-  {
+  "744": {
     "ActivationDelay": 0,
     "Capacity": 13,
     "CategoryType": "Defence",
@@ -37736,7 +37356,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 546
   },
-  {
+  "745": {
     "ActivationDelay": 0,
     "Capacity": 75,
     "CategoryType": "Support",
@@ -37788,7 +37408,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 659
   },
-  {
+  "746": {
     "ActivationDelay": 0,
     "Capacity": 5,
     "CategoryType": "Resources",
@@ -37840,7 +37460,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 665
   },
-  {
+  "747": {
     "ActivationDelay": 0,
     "Capacity": 5,
     "CategoryType": "Resources",
@@ -37892,7 +37512,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 667
   },
-  {
+  "748": {
     "ActivationDelay": 0,
     "Capacity": 1600000,
     "CategoryType": "Resources",
@@ -37944,7 +37564,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 548
   },
-  {
+  "749": {
     "ActivationDelay": 0,
     "Capacity": 1600000,
     "CategoryType": "Resources",
@@ -37996,7 +37616,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 547
   },
-  {
+  "750": {
     "ActivationDelay": 0,
     "Capacity": 200,
     "CategoryType": "Weapon",
@@ -38048,7 +37668,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 543
   },
-  {
+  "751": {
     "ActivationDelay": 0,
     "Capacity": 140,
     "CategoryType": "Weapon",
@@ -38136,7 +37756,7 @@
       }
     ]
   },
-  {
+  "753": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Support",
@@ -38188,7 +37808,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 579
   },
-  {
+  "754": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -38276,7 +37896,7 @@
       }
     ]
   },
-  {
+  "755": {
     "ActivationDelay": 0,
     "Capacity": 110,
     "CategoryType": "Support",
@@ -38328,7 +37948,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 541
   },
-  {
+  "756": {
     "ActivationDelay": 0,
     "Capacity": 65,
     "CategoryType": "Defence",
@@ -38380,7 +38000,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 544
   },
-  {
+  "757": {
     "ActivationDelay": 0,
     "Capacity": 45,
     "CategoryType": "Weapon",
@@ -38432,7 +38052,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 524
   },
-  {
+  "758": {
     "ActivationDelay": 0,
     "Capacity": 550,
     "CategoryType": "Resources",
@@ -38484,7 +38104,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 559
   },
-  {
+  "759": {
     "ActivationDelay": 0,
     "Capacity": 85,
     "CategoryType": "Weapon",
@@ -38572,7 +38192,7 @@
       }
     ]
   },
-  {
+  "760": {
     "ActivationDelay": 0,
     "Capacity": 175,
     "CategoryType": "Weapon",
@@ -38660,7 +38280,7 @@
       }
     ]
   },
-  {
+  "761": {
     "ActivationDelay": 0,
     "Capacity": 90,
     "CategoryType": "Weapon",
@@ -38748,7 +38368,7 @@
       }
     ]
   },
-  {
+  "762": {
     "ActivationDelay": 0,
     "Capacity": 100,
     "CategoryType": "Weapon",
@@ -38836,7 +38456,7 @@
       }
     ]
   },
-  {
+  "763": {
     "ActivationDelay": 0,
     "Capacity": 200,
     "CategoryType": "Weapon",
@@ -38924,7 +38544,7 @@
       }
     ]
   },
-  {
+  "764": {
     "ActivationDelay": 0,
     "Capacity": 24,
     "CategoryType": "Weapon",
@@ -39012,7 +38632,7 @@
       }
     ]
   },
-  {
+  "765": {
     "ActivationDelay": 60,
     "Capacity": 20,
     "CategoryType": "Superweapon",
@@ -39100,7 +38720,7 @@
       }
     ]
   },
-  {
+  "766": {
     "ActivationDelay": 0,
     "Capacity": 20,
     "CategoryType": "Superweapon",
@@ -39188,7 +38808,7 @@
       }
     ]
   },
-  {
+  "767": {
     "ActivationDelay": 0,
     "Capacity": 20,
     "CategoryType": "Superweapon",
@@ -39240,7 +38860,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 518
   },
-  {
+  "768": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -39328,7 +38948,7 @@
       }
     ]
   },
-  {
+  "769": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -39416,7 +39036,7 @@
       }
     ]
   },
-  {
+  "770": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -39504,7 +39124,7 @@
       }
     ]
   },
-  {
+  "771": {
     "ActivationDelay": 20,
     "Capacity": 0,
     "CategoryType": "Weapon",
@@ -39556,7 +39176,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 703
   },
-  {
+  "772": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -39608,7 +39228,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 545
   },
-  {
+  "773": {
     "ActivationDelay": 0,
     "Capacity": 35,
     "CategoryType": "Weapon",
@@ -39660,7 +39280,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 509
   },
-  {
+  "774": {
     "ActivationDelay": 0,
     "Capacity": 100,
     "CategoryType": "Weapon",
@@ -39748,7 +39368,7 @@
       }
     ]
   },
-  {
+  "775": {
     "ActivationDelay": 0,
     "Capacity": 3,
     "CategoryType": "Support",
@@ -39800,7 +39420,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 154
   },
-  {
+  "776": {
     "ActivationDelay": 0,
     "Capacity": 90,
     "CategoryType": "Weapon",
@@ -39852,7 +39472,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 525
   },
-  {
+  "777": {
     "ActivationDelay": 0,
     "Capacity": 90,
     "CategoryType": "Weapon",
@@ -39904,7 +39524,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 691
   },
-  {
+  "778": {
     "ActivationDelay": 0,
     "Capacity": 75,
     "CategoryType": "Weapon",
@@ -39956,7 +39576,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 699
   },
-  {
+  "779": {
     "ActivationDelay": 0,
     "Capacity": 10,
     "CategoryType": "Support",
@@ -40008,7 +39628,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "781": {
     "ActivationDelay": 0,
     "Capacity": 280,
     "CategoryType": "Defence",
@@ -40060,7 +39680,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "782": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -40112,7 +39732,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "786": {
     "ActivationDelay": 0,
     "Capacity": 15,
     "CategoryType": "Support",
@@ -40164,7 +39784,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 779
   },
-  {
+  "787": {
     "ActivationDelay": 0,
     "Capacity": 50,
     "CategoryType": "Weapon",
@@ -40216,7 +39836,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 707
   },
-  {
+  "788": {
     "ActivationDelay": 0,
     "Capacity": 4,
     "CategoryType": "Defence",
@@ -40268,7 +39888,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 705
   },
-  {
+  "789": {
     "ActivationDelay": 0,
     "Capacity": 3,
     "CategoryType": "Defence",
@@ -40320,7 +39940,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 706
   },
-  {
+  "790": {
     "ActivationDelay": 0,
     "Capacity": 320,
     "CategoryType": "Defence",
@@ -40372,7 +39992,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 781
   },
-  {
+  "791": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -40424,7 +40044,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 782
   },
-  {
+  "792": {
     "ActivationDelay": 0,
     "Capacity": 6,
     "CategoryType": "Support",
@@ -40476,7 +40096,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 212
   },
-  {
+  "793": {
     "ActivationDelay": 60,
     "Capacity": 0,
     "CategoryType": "Superweapon",
@@ -40564,7 +40184,7 @@
       }
     ]
   },
-  {
+  "794": {
     "ActivationDelay": 0,
     "Capacity": 20,
     "CategoryType": "Weapon",
@@ -40616,7 +40236,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "795": {
     "ActivationDelay": 0,
     "Capacity": 5,
     "CategoryType": "Defence",
@@ -40668,7 +40288,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 0
   },
-  {
+  "796": {
     "ActivationDelay": 60,
     "Capacity": 10,
     "CategoryType": "Superweapon",
@@ -40756,7 +40376,7 @@
       }
     ]
   },
-  {
+  "797": {
     "ActivationDelay": 60,
     "Capacity": 15,
     "CategoryType": "Superweapon",
@@ -40844,7 +40464,7 @@
       }
     ]
   },
-  {
+  "798": {
     "ActivationDelay": 60,
     "Capacity": 12,
     "CategoryType": "Superweapon",
@@ -40932,7 +40552,7 @@
       }
     ]
   },
-  {
+  "799": {
     "ActivationDelay": 60,
     "Capacity": 20,
     "CategoryType": "Superweapon",
@@ -41020,7 +40640,7 @@
       }
     ]
   },
-  {
+  "800": {
     "ActivationDelay": 0,
     "Capacity": 10,
     "CategoryType": "Superweapon",
@@ -41072,7 +40692,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 711
   },
-  {
+  "801": {
     "ActivationDelay": 0,
     "Capacity": 15,
     "CategoryType": "Superweapon",
@@ -41124,7 +40744,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 800
   },
-  {
+  "802": {
     "ActivationDelay": 0,
     "Capacity": 12,
     "CategoryType": "Superweapon",
@@ -41176,7 +40796,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 712
   },
-  {
+  "803": {
     "ActivationDelay": 0,
     "Capacity": 20,
     "CategoryType": "Superweapon",
@@ -41228,7 +40848,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 802
   },
-  {
+  "804": {
     "ActivationDelay": 0,
     "Capacity": 10,
     "CategoryType": "Superweapon",
@@ -41316,7 +40936,7 @@
       }
     ]
   },
-  {
+  "805": {
     "ActivationDelay": 0,
     "Capacity": 12,
     "CategoryType": "Superweapon",
@@ -41404,7 +41024,7 @@
       }
     ]
   },
-  {
+  "806": {
     "ActivationDelay": 0,
     "Capacity": 15,
     "CategoryType": "Superweapon",
@@ -41492,7 +41112,7 @@
       }
     ]
   },
-  {
+  "807": {
     "ActivationDelay": 0,
     "Capacity": 20,
     "CategoryType": "Superweapon",
@@ -41580,7 +41200,7 @@
       }
     ]
   },
-  {
+  "808": {
     "ActivationDelay": 60,
     "Capacity": 20,
     "CategoryType": "Superweapon",
@@ -41668,7 +41288,7 @@
       }
     ]
   },
-  {
+  "809": {
     "ActivationDelay": 0,
     "Capacity": 20,
     "CategoryType": "Superweapon",
@@ -41720,7 +41340,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 801
   },
-  {
+  "810": {
     "ActivationDelay": 0,
     "Capacity": 20,
     "CategoryType": "Superweapon",
@@ -41808,7 +41428,7 @@
       }
     ]
   },
-  {
+  "811": {
     "ActivationDelay": 0,
     "Capacity": 8,
     "CategoryType": "Defence",
@@ -41860,7 +41480,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 795
   },
-  {
+  "812": {
     "ActivationDelay": 0,
     "Capacity": 10,
     "CategoryType": "Defence",
@@ -41912,7 +41532,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 811
   },
-  {
+  "813": {
     "ActivationDelay": 0,
     "Capacity": 30,
     "CategoryType": "Weapon",
@@ -41964,7 +41584,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 794
   },
-  {
+  "814": {
     "ActivationDelay": 0,
     "Capacity": 40,
     "CategoryType": "Weapon",
@@ -42016,7 +41636,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 813
   },
-  {
+  "815": {
     "ActivationDelay": 0,
     "Capacity": 12,
     "CategoryType": "Defence",
@@ -42068,7 +41688,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 812
   },
-  {
+  "816": {
     "ActivationDelay": 0,
     "Capacity": 14,
     "CategoryType": "Defence",
@@ -42120,7 +41740,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 815
   },
-  {
+  "817": {
     "ActivationDelay": 0,
     "Capacity": 15,
     "CategoryType": "Defence",
@@ -42172,7 +41792,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 816
   },
-  {
+  "818": {
     "ActivationDelay": 0,
     "Capacity": 50,
     "CategoryType": "Weapon",
@@ -42224,7 +41844,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 814
   },
-  {
+  "819": {
     "ActivationDelay": 0,
     "Capacity": 60,
     "CategoryType": "Weapon",
@@ -42276,7 +41896,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 818
   },
-  {
+  "820": {
     "ActivationDelay": 0,
     "Capacity": 75,
     "CategoryType": "Weapon",
@@ -42328,7 +41948,7 @@
     "TargetType": null,
     "UpgradeFromRoomDesignId": 819
   },
-  {
+  "821": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -42416,7 +42036,7 @@
       }
     ]
   },
-  {
+  "822": {
     "ActivationDelay": 0,
     "Capacity": 0,
     "CategoryType": "Defence",
@@ -42504,4 +42124,4 @@
       }
     ]
   }
-]
+}

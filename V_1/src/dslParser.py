@@ -22,10 +22,23 @@ def parse_dsl_text(dsl_text):
     for match in rule_pattern.finditer(dsl_text):
         name = match.group(1).strip()
         condition = match.group(2).strip()
+        condition = remove_comments(condition)
+        condition = replace_logical_operators(condition)
         actions_str = match.group(3).strip()
         actions = parse_actions(actions_str)
         rules.append(DSLRule(name, condition, actions))
     return rules
+    
+
+def remove_comments(condition):
+    # Remove comments starting with //
+    return re.sub(r'//.*', '', condition).strip()
+
+def replace_logical_operators(condition):
+    # Replace logical operators with Python equivalents
+    condition = condition.replace('&&', 'and')
+    condition = condition.replace('||', 'or')
+    return condition
 
 def parse_actions(actions_str):
     """

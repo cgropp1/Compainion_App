@@ -12,6 +12,22 @@ essensal_rooms = [
     "Android"
 ]
 
+armor_value_per_lvl = {
+    "1": 2,
+    "2": 4,
+    "3": 5,
+    "4": 6,
+    "5": 7,
+    "6": 8,
+    "7": 9,
+    "8": 10,
+    "9": 12,
+    "10": 14,
+    "11": 16,
+    "12": 18,
+    "13": 18
+}
+
 class Ship:
     """
     This class is used to hold the data for a ship at a spesific datetime.
@@ -26,6 +42,7 @@ class Ship:
     def __init__(self, _ship: _entities.Ship = None, _designs: dict = None) -> None:
         if _ship and _designs:
             #print(_designs)
+
             
             self.shipRooms = []
             self.shipArmor = []
@@ -37,14 +54,15 @@ class Ship:
                     self.shipRooms.append(_Room.Room(_essensal_rooms = essensal_rooms, _room = room, _design = design))
                     if self.shipRooms[-1].getType() == "Wall":
                         self.shipArmor.append(self.shipRooms[-1])
-                        
-            print(f"Number of Rooms:{len(self.shipRooms)}")
-            print(f"Number of Armor:{len(self.shipArmor)}")
-            print(f"Number of rooms with out armor:{len(self.shipRooms) - len(self.shipArmor)}")
+            print(f"Ship Level: {_ship.ship_level}")
+            self.shipArmorValue = armor_value_per_lvl.get(str(_ship.ship_level), 0)
+                
+            
             self.ship = {
                 #"""PER DATE"""#
                 "ship_design_id": _ship.ship_design_id,
                 "ship_id": _ship.id,
+                "ship_armor_value": self.shipArmorValue,
                 
                 #"""PER LAYOUT"""#
                 "ship_rooms": [room.to_dict() for room in self.shipRooms],
