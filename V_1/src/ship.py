@@ -15,7 +15,6 @@ essensal_rooms = [
 class Ship:
     """
     This class is used to hold the data for a ship at a spesific datetime.
-    ship_datetime: datetime The datetime of the ship.
     ship_design_id: int The type id of the ship.
     ship_id: int The id of the ship.
     ship_rooms: List[Room] The rooms on the ship.
@@ -31,20 +30,19 @@ class Ship:
             self.shipRooms = []
             self.shipArmor = []
             for room in _ship.rooms:
-                print(f"Room Design ID: {room.room_design_id}")
                 design = _designs.get(str(room.room_design_id), None)
                 if design is None:
                     print(f"Design not found for Room Design ID: {room.room_design_id}, room name: {room.upgrade_room_design_id}")
                 else:
-                    print(f"Design found for Room Design ID: {room.room_design_id}: {design}")
                     self.shipRooms.append(_Room.Room(_essensal_rooms = essensal_rooms, _room = room, _design = design))
                     if self.shipRooms[-1].getType() == "Wall":
                         self.shipArmor.append(self.shipRooms[-1])
                         
-
+            print(f"Number of Rooms:{len(self.shipRooms)}")
+            print(f"Number of Armor:{len(self.shipArmor)}")
+            print(f"Number of rooms with out armor:{len(self.shipRooms) - len(self.shipArmor)}")
             self.ship = {
                 #"""PER DATE"""#
-                "ship_datetime": str(_datetime.now()),
                 "ship_design_id": _ship.ship_design_id,
                 "ship_id": _ship.id,
                 

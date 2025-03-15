@@ -25,9 +25,9 @@ class Room:
             roomIsPowered = _design.get('MaxSystemPower', 0) > 0
             roomShortname = _design.get('RoomShortName', None).split(':')[0] if _design.get('RoomShortName', None) else None
             roomNumCrew = _design.get('Capacity', 0) if roomShortname == "Bedroom" else 0
-            roomPower = -1*_design.get('MaxPowerGenerated', 0) if _design.get('MaxPowerGenerated', 0) != 0 else _design.get('MaxSystemPower', 0)
+            roomPower = _design.get('MaxPowerGenerated', 0) if _design.get('MaxPowerGenerated', 0) != 0 else -1*_design.get('MaxSystemPower', 0)
             roomArmorAbl = _design.get('Capacity', 0) if _design.get('RoomType') == "Wall" else 0
-            roomIsEssential = roomShortname in _essensal_rooms
+            roomIsEssential = _design.get("RoomType", None) in _essensal_rooms
 
             self.room = {
                 #"""PER SHIP"""
@@ -38,7 +38,7 @@ class Room:
                 "modules_id": _room.item_ids, #TODO: make modules have more data?
                 "isUpgrading": roomIsUpgrading,
                 #From Design Dict#
-                "room_lvl": _design.get('level', None),
+                "room_lvl": _design.get('Level', None),
                 #"""PER ROOM"""
                 "room_type": _design.get('RoomType', None),
                 "room_size": (_design.get('Rows', None), _design.get('Columns', None)),
@@ -86,10 +86,35 @@ class Room:
 
     def setArmor(self, _armorRoom: 'Room'):
         self.room["room_armor"] += _armorRoom.room["room_armor_abl"]
-        
 
-    # def __repr__(self) -> str:
-    #     return self.to_dict()
+    @property
+    def design_id(self) -> int:
+        return self.room["room_design_id"]
+
+    @property
+    def power(self) -> int:
+        return self.room["room_Power"]
     
-    # def __str__(self) -> str:
-    #     return self.__repr__()
+    @property
+    def num_crew(self) -> int:
+        return self.room["room_numCrew"]
+    
+    @property
+    def is_powered(self) -> bool:
+        return self.room["room_isPowered"]
+    
+    @property
+    def armor(self) -> int:
+        return self.room["room_armor"]
+
+    @property
+    def type(self) -> str:
+        return self.room["room_type"]
+
+    @property
+    def short_name(self) -> str:
+        return self.room["room_short_name"]
+
+    @property
+    def essential(self) -> bool:
+        return self.room["room_essential"]

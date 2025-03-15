@@ -50,12 +50,13 @@ class User:
     def from_dict(self, _user: dict) -> None:
         self.user = _user
 
-    def to_dict_dated_data(self) -> dict:
-        return self.user["dated_data"]
+    def to_dict_dated_data(self) -> list:
+        return self.user["dated_data"][-1]
     
-    #TODO: recreate the to file function
     def to_file(self, check_time: bool = True, file_path: str = None) -> None:
-        dated_data = self.to_dict_dated_data()
+        new_data = self.to_dict_dated_data()
+        print(new_data)
+
         if not file_path:
             # Ensure the directory exists
             directory = _os.path.join(_os.path.dirname(__file__), '..', 'user_data')
@@ -77,17 +78,13 @@ class User:
                 most_recent_datetime = _datetime.fromisoformat(most_recent_date)
                 current_datetime = _datetime.now()
 
-                if current_datetime - most_recent_datetime < _timedelta(minutes=30) and check_time:
+                if current_datetime - most_recent_datetime < _timedelta(minutes=1) and check_time:
                     print("Data not appended. Less than 30 minutes since the last entry.")
                     return
 
-            previous_data["dated_data"].append(dated_data)
+            previous_data["dated_data"].append(new_data)
         else:
-            previous_data = {
-                "user_name": self.user_name,
-                "user_id": self.user_id,
-                "dated_data": [dated_data]
-            }
+            previous_data = self.to_dict()
 
         with _gzip.open(file_path, 'wt', encoding='utf-8') as file:
             _json.dump(previous_data, file)

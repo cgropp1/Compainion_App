@@ -14,16 +14,15 @@ def room_design_to_dict(room_design) -> dict:
     """Convert a RoomDesign object to a dictionary."""
     return {key: value for key, value in vars(room_design).items() if not callable(value) and not key.startswith('_')}
 
+#TODO: Create a class to get all designs (Ship and Item, CREW?) and save them to json files
 async def async_API_calls(_apiInterface) -> List[dict]:
-    room_designs = await _apiInterface.client.room_service.list_room_designs()
+    room_designs = await _apiInterface.client.item_service.list_item_designs()
     with open('room_designs.txt', 'w') as f:
         f.write(str(room_designs))
     return room_designs
 
 def __main__():
     apiinterface = _apiInterface.apiInterface()
-    #_asyncio.run(async_API_calls(apiinterface))
-    #_room_designs_helper.main()
 
 
     with open('room_designs.json', 'r') as f:
