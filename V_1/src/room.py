@@ -19,7 +19,7 @@ class Room:
     room_numCrew: int The number of crew that can be held if it is a bedroom
     room_Power: int The power of the room.              #---THIS IS POSITIVE IF POWER GEN AND NEGATIVE IF POWER CON---#
     """
-    def __init__(self, _essensal_rooms: list[str], _room: _entities.Room = None, _design: dict = None) -> None:
+    def __init__(self, _essensal_rooms: list[str] = None, _room: _entities.Room = None, _design: dict = None) -> None:
         if _room and _design:
             roomIsUpgrading = _room.room_status == "Upgrading"
             roomIsPowered = _design.get('MaxSystemPower', 0) > 0

@@ -6,6 +6,7 @@ from datetime import datetime as _datetime, timedelta as _timedelta
 from pssapi import entities as _entities
 
 from src import ship as _Ship
+from src import room as _Room
 
 # Soft dependency on apiInterface
 class apiInterface:
@@ -101,6 +102,19 @@ class User:
             data = _json.load(file)
 
         self.from_dict(data)
+
+    @property
+    def rooms(self) -> list[_Room.Room]:
+        roomDict = self.user["dated_data"][-1]["user_ship"].get("ship_rooms", [])
+        rooms = []
+        for room in roomDict:
+            try:
+                room_obj = _Room.Room()
+                room_obj.from_dict(room)
+                rooms.append(room_obj)
+            except Exception as e:
+                print(f"Error creating Room from dict: {room}, Error: {e}")
+        return rooms
 
     def __repr__(self) -> str:
         return self.to_dict()

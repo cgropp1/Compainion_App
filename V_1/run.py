@@ -1,4 +1,5 @@
-from src import apiInterface as _apiInterface, user as _user, agent as _agent, screenReader as _screenReader, ruleEngine as _ruleEngine
+from src import apiInterface as _apiInterface, user as _user, agent as _agent, screenReader as _screenReader
+from src import ruleEngine as _ruleEngine
 import matches as _matches
 from typing import List, Tuple
 import os as _os
@@ -28,12 +29,13 @@ def __main__():
     with open('room_designs.json', 'r') as f:
         room_designs = json.load(f)
 
-    temp_user = apiinterface.get_users_by_name(["C3R3S1"])
-    temp_user[0].highest_trophy
-    user = _user.User(_api_interface=apiinterface, _user=temp_user[0], _designs=room_designs)
-    user.to_file()
+    user = _user.User(apiinterface)
+    user.from_file(_file_path = r"C:\Users\coleg\Documents\GitHub\PSS\Compainion_App\V_1\user_data\C3R3S1_6366452.gz")
+    
 
-    #ruleEnginge = _ruleEngine.RuleEngine("ROOM_RULES.dsl", "room_designs.json", f"{user._user_name}_{user._user_id}.gz")
+
+    ruleEnginge = _ruleEngine.RuleEngine(api_interface=apiinterface, rules_file=r"C:\Users\coleg\Documents\GitHub\PSS\Compainion_App\ROOM_RULES.dsl", user_file=r"C:\Users\coleg\Documents\GitHub\PSS\Compainion_App\V_1\user_data\C3R3S1_6366452.gz")
+    print(ruleEnginge.rules[0].name)
     
     
 if __name__ == "__main__":

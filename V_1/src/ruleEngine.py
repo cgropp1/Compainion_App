@@ -1,5 +1,10 @@
 from src import dslParser as _dslParser
 from src import room as _Room
+from src import user as _User
+
+class apiInterface:
+    pass
+
 
 class Room_Context:
     """
@@ -27,6 +32,14 @@ class Room_Context:
 
     
 class RuleEngine:
+
+    def __init__(self, api_interface: apiInterface,  rules_file: str, user_file: str) -> None:
+        self.rules = _dslParser.parse_dsl_file(rules_file)
+        self.user = _User.User(api_interface)
+        self.user.from_file(user_file)
+        self.rooms = self.user.rooms
+        self.room_contexts = [Room_Context(room) for room in self.rooms]
+
     def evaluate_rules(room_context, user):
     # Parse the ROOM_RULES.dsl file
         rules = _dslParser.parse_dsl_file(r"C:\Users\coleg\Documents\GitHub\PSS\Compainion_App\ROOM_RULES.dsl")
