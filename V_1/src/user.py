@@ -7,16 +7,15 @@ from pssapi import entities as _entities
 
 from src import ship as _Ship
 from src import room as _Room
-
-# Soft dependency on apiInterface
-class apiInterface:
-    pass
+from src import apiInterface as _apiInterface
 
 class User:
-    def __init__(self, _api_interface: apiInterface, _user: _entities.User = None, _designs: dict = None) -> None:
-        if _user and _designs:
+    def __init__(self, _api_interface: _apiInterface.apiInterface, _user: _entities.User = None, room_designs: dict = None, ship_designs:dict = None) -> None:
+        if _user and room_designs and ship_designs:
             self.user_id = _user.id
             self.user_name = _user.name
+            self.design = ship_designs.get(str(_api_interface.get_ship_by_user(_user = _user).ship_design_id), None)
+            print(f"Found design: {'Yes' if self.design else 'No'}")
             self.user = {
                 "user_id": _user.id,
                 "user_name": _user.name,
@@ -25,10 +24,11 @@ class User:
                     {
                     "date": _datetime.now().isoformat(),
                     "highest_trophy": _user.highest_trophy,
-                    "user_ship": _Ship.Ship(_ship=_api_interface.get_ship_by_user(_user = _user), _designs=_designs).to_dict()
+                    "user_ship": _Ship.Ship(_ship = _api_interface.get_ship_by_user(_user = _user), _room_designs=room_designs, _ship_design = self.design).to_dict()
                     }
                 ]
             }
+            # print(f"user_ship data: {self.user['dated_data'][-1]['user_ship']}")  # Debugging output
         elif _user:
             self.user_id = _user.id
             self.user_name = _user.name           
@@ -56,7 +56,7 @@ class User:
     
     def to_file(self, check_time: bool = True, file_path: str = None) -> None:
         new_data = self.to_dict_dated_data()
-        print(new_data)
+        print(f"New data to be saved: {new_data}")  # Debugging output
 
         if not file_path:
             # Ensure the directory exists
@@ -73,7 +73,11 @@ class User:
 
         if _os.path.exists(file_path):
             with _gzip.open(file_path, 'rt', encoding='utf-8') as file:
-                previous_data = _json.load(file)
+                try:
+                    previous_data = _json.load(file)
+                except _json.JSONDecodeError as e:
+                    print(f"Error loading JSON data: {e}")
+                    previous_data = {"dated_data": []}
                 previous_dates = [data["date"] for data in previous_data["dated_data"]]
                 most_recent_date = max(previous_dates)
                 most_recent_datetime = _datetime.fromisoformat(most_recent_date)
@@ -99,25 +103,31 @@ class User:
             return
 
         with _gzip.open(file_path, 'rt', encoding='utf-8') as file:
-            data = _json.load(file)
+            try:
+                data = _json.load(file)
+                print(f"Loaded data: {data}")  # Debugging output
+            except _json.JSONDecodeError as e:
+                print(f"Error loading JSON data: {e}")
+                data = None
 
-        self.from_dict(data)
+        if data:
+            self.from_dict(data)
 
     @property
     def rooms(self) -> list[_Room.Room]:
-        roomDict = self.user["dated_data"][-1]["user_ship"].get("ship_rooms", [])
         rooms = []
-        for room in roomDict:
-            try:
-                room_obj = _Room.Room()
-                room_obj.from_dict(room)
-                rooms.append(room_obj)
-            except Exception as e:
-                print(f"Error creating Room from dict: {room}, Error: {e}")
+        user_ship = self.to_dict_dated_data().get("user_ship", {})
+        print(f"user_ship in rooms property: {user_ship}")  # Debugging output
+        ship_rooms = user_ship.get("ship_rooms", [])
+        for room in ship_rooms:
+            if room:  # Ensure room data is not None
+                _room = _Room.Room()
+                _room.from_dict(room)
+                rooms.append(_room)
         return rooms
 
     def __repr__(self) -> str:
-        return self.to_dict()
+        return str(self.to_dict())
     
     def __str__(self) -> str:
         return self.__repr__()

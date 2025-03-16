@@ -9,13 +9,14 @@ class RuleEngine:
 
     def __init__(self, api_interface: apiInterface,  rules_file: str, user_file: str = None, user: _User.User = None) -> None:
         self.rules = _dslParser.parse_dsl_file(rules_file)
+        print(f"Generated user using user_file: {'Yes' if user_file else 'No'}, user: {'Yes' if user else 'No'}")
         if user_file:
             self.user = _User.User(api_interface)
             self.user.from_file(user_file)
         else:
             self.user = user
         self.rooms = self.user.rooms
-        self.ship_armor_value = self.user.to_dict()["dated_data"][-1]["user_ship"]["ship_armor_value"]
+        self.ship_armor_value = self.user.to_dict_dated_data()["user_ship"]["ship_armor_value"]
 
     def evaluate_room(self, room: _Room.Room) -> tuple[str, str, int]:
         print(f"Evaluating rules for room: {room.short_name}")
@@ -36,8 +37,6 @@ class RuleEngine:
             if room.type == "Wall" or room.type == "Lift" or room.type == "Corridor":
                 continue
             evaluations.append(self.evaluate_room(room))
-            print(evaluations[-1])
-            print(evaluations[-1][1])
             score += evaluations[-1][1]
         return score, evaluations
 

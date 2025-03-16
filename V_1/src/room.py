@@ -14,11 +14,12 @@ class Room:
     room_isPowered: bool The power status of the room.  #IS THE ROOM POWERED (NO MATTER HOW MUCH POWER)#
     room_armor: int The armor value of the room.
     room_isUpgrading: bool The upgrade status of the room.
-    room_modules_id: List[int] The modules in the room. #THIS IS A LIST OF MODULE IDS#
+    room_modules_id: list[int] The modules in the room. #THIS IS A LIST OF MODULE IDS#
     room_essential: bool Is the room essential.         #---THIS IS NOT FROM GAME DATA---#
     room_numCrew: int The number of crew that can be held if it is a bedroom
     room_Power: int The power of the room.              #---THIS IS POSITIVE IF POWER GEN AND NEGATIVE IF POWER CON---#
     """
+
     def __init__(self, _essensal_rooms: list[str] = None, _room: _entities.Room = None, _design: dict = None) -> None:
         if _room and _design:
             roomIsUpgrading = _room.room_status == "Upgrading"
@@ -53,6 +54,7 @@ class Room:
             }
         else:
             self.room = None
+            # print(f"Room initialization failed: _room is {_room}, _design is {_design}")
 
     def to_dict(self) -> dict:
         return self.room
@@ -67,10 +69,8 @@ class Room:
         return self.room["room_Power"]    
     
     def getType(self) -> str:
-        if self.room["room_type"] == None:
-            raise ValueError("Room Type is None")
         return self.room["room_type"]
-    
+
     def isAjacent(self, _room: 'Room') -> bool:
         x1, y1 = self.room["room_cords"]
         width1, height1 = self.room["room_size"]
@@ -122,3 +122,9 @@ class Room:
     @property
     def size(self) -> tuple[int, int]:
         return self.room["room_size"]
+
+    def __repr__(self) -> str:
+        return str(self.to_dict())
+    
+    def __str__(self) -> str:
+        return self.__repr__()
