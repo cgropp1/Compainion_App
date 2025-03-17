@@ -2,6 +2,8 @@ from dataclasses import dataclass
 import json
 import jsonpickle
 
+#TODO: This still does not seem to work...
+
 def serialize_obj(obj):
     """ Converts an object to a JSON-safe dictionary. """
     if isinstance(obj, dict):

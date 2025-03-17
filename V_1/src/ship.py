@@ -48,7 +48,7 @@ class Ship:
             for room in _ship.rooms:
                 # print(f"Processing Room ID: {room.id}, Design ID: {room.room_design_id}")
                 design = _room_designs.get(str(room.room_design_id), None)
-                print(f"Room Design ID: {room.room_design_id}")
+                #print(f"Room Design ID: {room.room_design_id}")
                 if design is None:
                     print(f"Design not found for Room Design ID: {room.room_design_id}")
                 else:

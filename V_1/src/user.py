@@ -56,7 +56,7 @@ class User:
     
     def to_file(self, check_time: bool = True, file_path: str = None) -> None:
         new_data = self.to_dict_dated_data()
-        print(f"New data to be saved: {new_data}")  # Debugging output
+        #print(f"New data to be saved: {new_data}")  # Debugging output
 
         if not file_path:
             # Ensure the directory exists
@@ -105,7 +105,7 @@ class User:
         with _gzip.open(file_path, 'rt', encoding='utf-8') as file:
             try:
                 data = _json.load(file)
-                print(f"Loaded data: {data}")  # Debugging output
+                #print(f"Loaded data: {data}")  # Debugging output
             except _json.JSONDecodeError as e:
                 print(f"Error loading JSON data: {e}")
                 data = None
@@ -117,7 +117,7 @@ class User:
     def rooms(self) -> list[_Room.Room]:
         rooms = []
         user_ship = self.to_dict_dated_data().get("user_ship", {})
-        print(f"user_ship in rooms property: {user_ship}")  # Debugging output
+        #print(f"user_ship in rooms property: {user_ship}")  # Debugging output
         ship_rooms = user_ship.get("ship_rooms", [])
         for room in ship_rooms:
             if room:  # Ensure room data is not None

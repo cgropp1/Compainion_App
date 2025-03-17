@@ -17,11 +17,13 @@ class RuleEngine:
             self.user = user
         self.rooms = self.user.rooms
         self.ship_armor_value = self.user.to_dict_dated_data()["user_ship"]["ship_armor_value"]
+        print(f"One block of armor is worth: {self.ship_armor_value}")
 
     def evaluate_room(self, room: _Room.Room) -> tuple[str, str, int]:
         print(f"Evaluating rules for room: {room.short_name}")
         for rule in self.rules:
             if eval(rule.condition):
+                print(f"Room has {room.armor / self.ship_armor_value} armor blocks (has {room.armor} armor) but requires {eval(rule.condition.split('<=')[1])/self.ship_armor_value}")
                 if rule.actions[0][0] == "penalty":
                     print([room.short_name, rule.actions[0][1], rule.actions[1][1]])
                     return [room.short_name, rule.actions[0][1], rule.actions[1][1]]
@@ -31,7 +33,7 @@ class RuleEngine:
         return [room.short_name, 0, "No Rule Triggered"]
 
     def evaluate_all_rooms(self) -> tuple[int, list[tuple[str, int, str]]]:
-        score = 0
+        score = float(0.0)
         evaluations = []
         for room in self.rooms:
             if room.type == "Wall" or room.type == "Lift" or room.type == "Corridor":
