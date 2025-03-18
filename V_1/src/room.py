@@ -28,13 +28,16 @@ class Room:
         try:
             if _room and _design:
                 try:
+                    if _design.get('room_design_id', 'False') == 'False':
+                        logger.warning(f"Room design not found for room: {_room.id}")
+                    logger.debug(f"Initializing room: {_room.id} with design: {_design.get('room_design_id', 'unknown')}")
                     roomIsUpgrading = _room.room_status == "Upgrading"
-                    roomIsPowered = _design.get('MaxSystemPower', 0) > 0 or _design.get('MaxPowerGenerated', 0) > 0
-                    roomShortname = _design.get('RoomShortName', None).split(':')[0] if _design.get('RoomShortName', None) else None
-                    roomNumCrew = _design.get('Capacity', 0) if roomShortname == "Bedroom" else 0
-                    roomPower = _design.get('MaxPowerGenerated', 0) if _design.get('MaxPowerGenerated', 0) != 0 else -1*_design.get('MaxSystemPower', 0)
-                    roomArmorAbl = _design.get('Capacity', 0) if _design.get('RoomType') == "Wall" else 0
-                    if _design.get('RoomType') == "Wall" and roomArmorAbl == 0:
+                    roomIsPowered = _design.get('max_system_power', 0) > 0 or _design.get('max_power_generated', 0) > 0
+                    roomShortname = _design.get('room_short_name', None).split(':')[0] if _design.get('room_short_name', None) else None
+                    roomNumCrew = _design.get('capacity', 0) if roomShortname == "Bedroom" else 0
+                    roomPower = _design.get('max_power_generated', 0) if _design.get('max_power_generated', 0) != 0 else -1*_design.get('max_system_power', 0)
+                    roomArmorAbl = _design.get('capacity', 0) if _design.get('room_type') == "Wall" else 0
+                    if _design.get('room_type') == "Wall" and roomArmorAbl == 0:
                         logger.warning(f"Wall with no armor ability: {_design}")
 
                     roomIsEssential = _design.get("RoomType", None) in _essensal_rooms
@@ -47,10 +50,10 @@ class Room:
                         "modules_id": _room.item_ids, #TODO: make modules have more data?
                         "isUpgrading": roomIsUpgrading,
                         #From Design Dict#
-                        "room_lvl": _design.get('Level', None),
+                        "room_lvl": _design.get('level', None),
                         #"""PER ROOM"""
-                        "room_type": _design.get('RoomType', None),
-                        "room_size": (_design.get('Columns', None), _design.get('Rows', None)),
+                        "room_type": _design.get('room_type', None),
+                        "room_size": (_design.get('columns', None), _design.get('rows', None)),
                         "room_isPowered": roomIsPowered,
                         "room_short_name": roomShortname,
                         "room_essential": roomIsEssential,

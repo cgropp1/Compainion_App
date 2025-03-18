@@ -1,7 +1,12 @@
 import logging
+import traceback
 import os
 import sys
 from datetime import datetime
+
+# Expose traceback module
+__all__ = ['traceback']
+sys.modules[__name__].traceback = traceback
 
 def setup_logging(log_level=logging.INFO, numbackups:int = 5) -> tuple[logging.Logger, str]:
     """
@@ -45,7 +50,7 @@ def setup_logging(log_level=logging.INFO, numbackups:int = 5) -> tuple[logging.L
 
     cleanup_logs(numbackups)
 
-    app_logger.info("Log cleanup complete: Kept {numbackups} log files")
+    app_logger.info(f"Log cleanup complete: Kept {numbackups} log files")
     
     return app_logger, log_file
 

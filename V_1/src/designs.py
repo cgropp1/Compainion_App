@@ -1,7 +1,6 @@
 import json
 import logging
 from pssapi import PssApiClient
-import jsonpickle
 
 # Get logger for this module
 logger = logging.getLogger('pss_companion.designs')
@@ -29,17 +28,13 @@ async def fetch_designs(api_method, id_key) -> dict:
     """Fetches designs from the API using the provided method."""
     try:
         designs = await api_method()
-        
-        return {
-            str(d[id_key]): serialize_obj(d)
-            for d in designs if id_key in d
-        }
+        return {str(d[id_key]): serialize_obj(d) for d in designs if id_key in d}
     except Exception as e:
         logger.error(f"Error fetching designs: {e}")
         raise
 
 async def get_all_designs(api_interface) -> dict:
-    """Fetches all designs from the API."""
+    """Fetches all designs from the API in a format matching room_designs.json."""
     try:
         return {
             "room_designs": await fetch_designs(api_interface.client.room_service.list_room_designs, "RoomDesignId"),
@@ -58,59 +53,30 @@ async def save_designs_to_files(api_interface):
     try:
         # Get room designs
         logger.info("Fetching room designs")
-        room_designs = {}
-        try:
-            all_rooms = await api_interface.client.list_room_designs()
-            for design in all_rooms:
-                room_designs[str(design.id)] = design.__dict__
-            logger.info(f"Retrieved {len(room_designs)} room designs")
-            
-            with open('room_designs.json', 'w') as f:
-                json.dump(room_designs, f, indent=2)
-            logger.info("Room designs saved to room_designs.json")
-        except Exception as e:
-            logger.error(f"Error fetching room designs: {e}")
-            raise
-        
-        # Get ship designs
-        logger.info("Fetching ship designs")
-        ship_designs = {}
-        try:
-            all_ships = await api_interface.client.list_ship_designs()
-            for design in all_ships:
-                ship_designs[str(design.id)] = design.__dict__
-            logger.info(f"Retrieved {len(ship_designs)} ship designs")
-            
-            with open('ship_designs.json', 'w') as f:
-                json.dump(ship_designs, f, indent=2)
-            logger.info("Ship designs saved to ship_designs.json")
-        except Exception as e:
-            logger.error(f"Error fetching ship designs: {e}")
-            raise
-            
-        # Get crew designs
-        logger.info("Fetching crew designs")
-        crew_designs = {}
-        try:
-            all_crew = await api_interface.client.list_character_designs()
-            for design in all_crew:
-                crew_designs[str(design.id)] = design.__dict__
-            logger.info(f"Retrieved {len(crew_designs)} crew designs")
-            
-            with open('crew_designs.json', 'w') as f:
-                json.dump(crew_designs, f, indent=2)
-            logger.info("Crew designs saved to crew_designs.json")
-        except Exception as e:
-            logger.error(f"Error fetching crew designs: {e}")
-            raise
-            
+        room_designs = await get_all_designs(api_interface)
+        with open('room_designs.json', 'w', encoding='utf-8') as f:
+            f.write(json.dumps(room_designs["room_designs"], indent=4))
+        logger.info("Room designs download complete")
+
+        with open('item_designs.json', 'w', encoding='utf-8') as f:
+            f.write(json.dumps(room_designs["item_designs"], indent=4))
+        logger.info("Item designs download complete")
+
+        with open('ship_designs.json', 'w', encoding='utf-8') as f:
+            f.write(json.dumps(room_designs["ship_designs"], indent=4))
+        logger.info("Ship designs download complete")
+
+        with open('crew_designs.json', 'w', encoding='utf-8') as f:
+            f.write(json.dumps(room_designs["crew_designs"], indent=4))
+        logger.info("Crew designs download complete")
+
         logger.info("Design data download complete")
         return True
     except Exception as e:
         logger.error(f"Error saving designs to files: {e}")
         return False
 
-async def write_raw_designs_to_file(api_interface, file_path: str):
-    raw_data = await get_all_designs(api_interface)
-    with open(file_path, "w", encoding="utf-8") as f:
-        f.write(jsonpickle.encode(raw_data, indent=4))
+# async def write_raw_designs_to_file(api_interface, file_path: str):
+#     raw_data = await get_all_designs(api_interface)
+#     with open(file_path, "w", encoding="utf-8") as f:
+#         f.write(jsonpickle.encode(raw_data, indent=4))

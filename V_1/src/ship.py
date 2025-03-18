@@ -56,7 +56,24 @@ class Ship:
                     
                     for room in _ship.rooms:
                         try:
-                            design = _room_designs.get(str(room.room_design_id), None)
+                            design = None
+                            if room.room_design_id is not None:
+                                # Try as string key first
+                                logger.debug(f"Looking up design with string key: {room.room_design_id}")
+                                design_id_str = str(room.room_design_id)
+                                if design_id_str in _room_designs:
+                                    logger.debug(f"Found design with string key: {design_id_str}")
+                                    design = _room_designs[design_id_str]
+                                    logger.debug(f"Design: {design}")
+                                # As a fallback, try direct lookup
+                                elif room.room_design_id in _room_designs:
+                                    design = _room_designs[room.room_design_id]
+                                    logger.debug(f"Found design with direct key: {room.room_design_id}")
+                                # Try nested lookup if designs are in "Designs" subkey
+                                elif "Designs" in _room_designs and design_id_str in _room_designs["Designs"]:
+                                    design = _room_designs["Designs"][design_id_str]
+                                    logger.debug(f"Found design with nested key: {design_id_str}")
+
                             if design is None:
                                 logger.warning(f"Design not found for Room Design ID: {room.room_design_id}")
                             else:

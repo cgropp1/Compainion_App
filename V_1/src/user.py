@@ -14,15 +14,33 @@ from src import apiInterface as _apiInterface
 logger = logging.getLogger('pss_companion.user')
 
 class User:
-    def __init__(self, _api_interface: _apiInterface.apiInterface, _user: _entities.User = None, room_designs: dict = None, ship_designs:dict = None) -> None:
+    def __init__(self) -> None:
+        self.user_id = None
+        self.user_name = None
+        self.design = None
+        self.ship = None
+        self.user = None
+        logger.info("User object created")
+
+    @classmethod
+    async def create(cls, _api_interface, _user, room_designs=None, ship_designs=None):
+        """Factory method to create and initialize a User object asynchronously"""
+        # Create instance with minimal init
+        instance = cls()
+        # Initialize it properly
+        await instance.init_user(_api_interface, _user, room_designs, ship_designs)
+        return instance
+
+    async def init_user(self, _api_interface: _apiInterface.apiInterface, _user: _entities.User, room_designs: dict, ship_designs: dict) -> None:
         try:
             if _user and room_designs and ship_designs:
                 try:
                     self.user_id = _user.id
                     self.user_name = _user.name
-                    self.design = ship_designs.get(str(_api_interface.get_ship_by_user(_user = _user).ship_design_id), None)
+                    self.ship = await _api_interface.get_ship_by_user(_user = _user)
+                    self.design = ship_designs.get(str(self.ship.ship_design_id), None)
                     logger.info(f"Found design for user {self.user_name}: {'Yes' if self.design else 'No'}")
-                    self.ship = _Ship.Ship(_ship = _api_interface.get_ship_by_user(_user = _user), _room_designs=room_designs, _ship_design = self.design)
+                    self.ship = _Ship.Ship(_ship = self.ship, _room_designs=room_designs, _ship_design = self.design)
                     self.user = {
                         "user_id": _user.id,
                         "user_name": _user.name,

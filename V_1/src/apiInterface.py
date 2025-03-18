@@ -7,24 +7,24 @@ from pssapi import PssApiClient, entities
 logger = logging.getLogger('pss_companion.apiInterface')
 
 class apiInterface:
-    def __init__(self):
+    def __init__(self) -> None:
         try:
-            self.client = PssApiClient()
+            self.client = None
             self.access_token = None
             self.device_key = "bdf1c128-1e7e-4a17-8e6e-98fd89e28f68"
             self.checksum_key = 5343
-            self.init_pss_api_client()
-            logger.info("API Interface initialized")
+            logger.info("API Interface created")
         except Exception as e:
             logging.error(f'Error in __init__(self):: {e}')
             raise
         pass
 
-    def init_pss_api_client(self):
+    async def init_pss_api_client(self):
         try:
-            loop = _asyncio.get_event_loop()
-            user_login = loop.run_until_complete(self.client.device_login(self.device_key, self.checksum_key))
+            self.client = PssApiClient()
+            user_login = await self.client.device_login(self.device_key, self.checksum_key)
             self.access_token = user_login.access_token
+            logger.info("API Interface initialized")
         except Exception as e:
             logging.error(f'Error in init_pss_api_client(self):: {e}')
             raise
@@ -37,22 +37,36 @@ class apiInterface:
             logging.error(f'Error in get_access_token(self):: {e}')
             raise
 
-    def get_users_by_name(self, names: list[str]) -> list[entities.User]:
-        try :
-            loop = _asyncio.get_event_loop()
-            tasks = [self.client.user_service.search_users(name) for name in names]
-            results = loop.run_until_complete(_asyncio.gather(*tasks))
-            users = [user for result in results for user in result]  # Flatten the list of lists
+    async def get_users_by_name(self, names: list[str]) -> List[entities.User]:
+        """Get users by name"""
+        try:
+            # Ensure client is initialized
+            if not self.client:
+                await self.initialize()
+
+            tasks = [self.client.user_service.search_users(name) for name in names] 
+            results = await _asyncio.gather(*tasks)
+            users = [user for result in results for user in result] # Flatten the list of lists return users
             return users
         except Exception as e:
-            logging.error(f'Error in get_users_by_name(self, names):: {e}')
+            logger.error(f"Error in get_users_by_name(self, names): {e}")
+            import traceback
+            logger.debug(traceback.format_exc())
             raise
-    
-    def get_ship_by_user(self, _user: entities.User) -> entities.Ship:
+            
+    async def get_ship_by_user(self, _user: entities.User) -> entities.Ship:
+        """Get ship for a user"""
         try:
-            loop = _asyncio.get_event_loop()
-            temp_ship, temp_user = loop.run_until_complete(self.client.ship_service.inspect_ship(self.access_token, _user.id))
+            # Ensure client is initialized
+            if not self.client:
+                await self.initialize()
+                
+            # Implement ship retrieval logic
+            logger.info(f"Getting ship for user: {_user.name} (ID: {_user.id})")
+            temp_ship, temp_user = await self.client.ship_service.inspect_ship(self.access_token, _user.id)
             return temp_ship
         except Exception as e:
-            logging.error(f'Error in get_ship_by_user(self, _user):: {e}')
+            logger.error(f"Error in get_ship_by_user: {e}")
+            import traceback
+            logger.debug(traceback.format_exc())
             raise

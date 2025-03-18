@@ -1,7 +1,9 @@
 import logging
+import asyncio
+
 from src import dslParser as _dslParser
 from src import room as _Room
-from src import user as _User
+from src import user as _user
 
 # Get logger for this module
 logger = logging.getLogger('pss_companion.ruleEngine')
@@ -11,7 +13,21 @@ class apiInterface:
     
 class RuleEngine:
 
-    def __init__(self, api_interface: apiInterface, rules_file: str, user_file: str = None, user: _User.User = None) -> None:
+    def __init__(self) -> None:
+        self.rules = None
+        self.user = None
+        self.rooms = None
+        self.ship_armor_value = None
+
+    @classmethod
+    async def create(cls, api_interface: apiInterface, rules_file: str, user_file: str = None, user: _user.User = None):
+        """Factory method to create and initialize a RuleEngine object asynchronously"""
+        # Create instance with minimal init
+        instance = cls()
+        await instance.init_ruleEngine(api_interface, rules_file, user_file, user)
+        return instance
+
+    async def init_ruleEngine(self, api_interface: apiInterface, rules_file: str, user_file: str = None, user: _user.User = None) -> None:
         try:
             logger.info(f"Initializing Rule Engine with rules file: {rules_file}")
             self.rules = _dslParser.parse_dsl_file(rules_file)
@@ -19,7 +35,7 @@ class RuleEngine:
             
             if user_file:
                 logger.info(f"Loading user data from file: {user_file}")
-                self.user = _User.User(api_interface)
+                self.user = await _user.User.create(api_interface)
                 self.user.from_file(user_file)
             else:
                 logger.info(f"Using provided user object")
@@ -150,4 +166,4 @@ class RuleEngine:
             
         except Exception as e:
             logger.error(f"Error in evaluate_all_rooms: {e}")
-            return 0.0, []
+            return 0.0, [], []
