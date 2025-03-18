@@ -10,10 +10,25 @@ from src import apiInterface as _apiInterface
 from src import user as _user
 from src import ruleEngine as _ruleEngine
 from src import designs as _designs
-from src import log_config
+from src import log_config as _log_config
+from src import fileManager as _fileManager
 
 # Set up logging
-logger, log_file = log_config.setup_logging(log_level=logging.INFO)
+logger, log_file = _log_config.setup_logging(log_level=logging.INFO)
+
+#Set up file manager
+file_manager = _fileManager.FileManager(base_dir=os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data'))
+
+#TODO: Create a UI that can can be used with the overlay and the companion app
+#TODO: Go back over the matches code (ADD rating)
+#TODO: Finish the rule engine rules
+#TODO: Create a file manager to handle the saving and loading of files
+#TODO: Finnish out the AI for the companion app and the overlay
+#TODO: Finish the overlay
+#TODO: Clean up dependencies and clean up the code with better def comments
+#TODO: Create a online database to store the data for the companion app
+#TODO: Make it an application that can be used by the public
+
 
 async def async_main():
     try:
@@ -27,7 +42,7 @@ async def async_main():
             ship_designs = designs["ship_designs"]
             if logger.getEffectiveLevel() == logging.DEBUG:
                 logger.info("Saving designs to files for debugging")
-                await _designs.save_designs_to_files(apiinterface)
+                await _designs.save_designs_to_files(apiinterface, file_manager)
 
                 logger.info("Checking internal design data with saved files")
                 with open('room_designs.json', 'r') as f:
@@ -92,7 +107,7 @@ async def rule_eval_async(_api_interface: _apiInterface, _room_designs: dict, _s
         logger.info(f"Retrieved ship for user")
         logger.info("Creating User object")
         User = await _user.User.create(_api_interface=_api_interface, _user=exact_user, room_designs=_room_designs, ship_designs=_ship_designs)
-        User.to_file()
+        User.to_file(_fileManager = file_manager)
         logger.info("User data saved to file")
 
         logger.info("Initializing Rule Engine")

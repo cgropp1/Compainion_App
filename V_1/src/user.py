@@ -9,6 +9,7 @@ from pssapi import entities as _entities
 from src import ship as _Ship
 from src import room as _Room
 from src import apiInterface as _apiInterface
+from src import fileManager as _fileManager
 
 # Get logger for this module
 logger = logging.getLogger('pss_companion.user')
@@ -119,54 +120,50 @@ class User:
             logging.error(f'Error in to_dict_dated_data(self): {e}')
             raise
     
-    def to_file(self, check_time: bool = True, file_path: str = None) -> None:
+    def to_file(self, _fileManager: _fileManager.FileManager, check_time: bool = True, file_path: str = None) -> None:
         try:
             new_data = self.to_dict_dated_data()
-            logger.debug(f"Preparing to save user data to file")
+            logger.info(f"Preparing to save user data to file")
 
-            if not file_path:
-                # Ensure the directory exists
-                directory = _os.path.join(_os.path.dirname(__file__), '..', 'user_data')
-                _os.makedirs(directory, exist_ok=True)
-
-                file_path = _os.path.join(directory, f"{self.user_name}_{self.user_id}.gz")
-                logger.debug(f"Using default file path: {file_path}")
-            else:
+            if file_path:
                 if not file_path.endswith(".gz"):
                     file_path += ".gz"
-                directory = _os.path.dirname(file_path)
-                _os.makedirs(directory, exist_ok=True)
-                logger.debug(f"Using provided file path: {file_path}")
-
-            if _os.path.exists(file_path):
-                with _gzip.open(file_path, 'rt', encoding='utf-8') as file:
-                    try:
-                        previous_data = _json.load(file)
-                        logger.debug("Successfully loaded previous data")
-                    except _json.JSONDecodeError as e:
-                        logger.error(f"Error loading JSON data: {e}")
-                        previous_data = {"dated_data": []}
-                        logger.warning("Created new empty data structure due to JSON error")
-                        
-                    previous_dates = [data["date"] for data in previous_data["dated_data"]]
-                    most_recent_date = max(previous_dates)
-                    most_recent_datetime = _datetime.fromisoformat(most_recent_date)
-                    current_datetime = _datetime.now()
-
-                    if current_datetime - most_recent_datetime < _timedelta(minutes=1) and check_time:
-                        logger.info("Data not appended - less than 1 minute since the last entry")
-                        return
-
-                previous_data["dated_data"].append(new_data)
-                logger.info("Appended new data to existing file")
+                    logger.info(f"Using provided file path: {file_path}")
             else:
-                previous_data = self.to_dict()
-                logger.info("Creating new data file")
+                file_path = f"{self.user_name}_{self.user_id}.gz"
+                logger.info(f"Using default file path: {file_path}")
 
-            with _gzip.open(file_path, 'wt', encoding='utf-8') as file:
-                _json.dump(previous_data, file)
-                logger.info(f"Successfully saved user data to {file_path}")
-                
+            file_path = f"usr_data/{file_path}"
+            logger.debug(f"Final file path: {file_path}")
+
+            if _fileManager:
+                logger.info("Using provided file manager")
+                if _fileManager.create_dir("usr_data"):
+                    previous_data = _fileManager.load_gzip_json(filepath=file_path)
+                    if previous_data:
+                        logger.info("Successfully loaded previous data")
+                        logger.info("Checking if data should be appended")
+                        logger.debug(f"Previous data: {previous_data}")
+                        previous_dates = [data["date"] for data in previous_data["dated_data"]]
+                        most_recent_date = max(previous_dates)
+                        most_recent_datetime = _datetime.fromisoformat(most_recent_date)
+                        current_datetime = _datetime.now()
+                    
+                        if current_datetime - most_recent_datetime < _timedelta(minutes=1) and check_time:
+                            logger.info("Data not appended - less than 1 minute since the last entry")
+                            return
+                    elif previous_data is None:
+                        logger.info("No previous data found: Creating new data structure")
+                        previous_data = self.to_dict()
+                    else:
+                        raise ValueError("Error loading previous data")
+                    
+                    previous_data["dated_data"].append(new_data)
+                    logger.info("Appended new data to existing file")
+
+                    logger.info(f"Saving user data to {_fileManager.save_gzip_json(data=previous_data, filepath=file_path)}")
+            else:
+                raise ValueError("No file manager provided")         
         except Exception as e:
             logger.error(f"Error saving user data to file: {e}")
             raise
