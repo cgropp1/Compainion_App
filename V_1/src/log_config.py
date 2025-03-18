@@ -3,7 +3,7 @@ import os
 import sys
 from datetime import datetime
 
-def setup_logging(log_level=logging.INFO):
+def setup_logging(log_level=logging.INFO, numbackups:int = 5) -> tuple[logging.Logger, str]:
     """
     Set up logging confisguration for the application
     :param log_level: The minimum logging level to record
@@ -43,23 +43,27 @@ def setup_logging(log_level=logging.INFO):
     # Log that the logging system is set up
     app_logger.info(f"Logging system initialized. Log file: {log_file}")
 
-    cleanup_logs()
+    cleanup_logs(numbackups)
 
-    app_logger.info("Log cleanup complete")
+    app_logger.info("Log cleanup complete: Kept {numbackups} log files")
     
     return app_logger, log_file
 
-def cleanup_logs():
+def cleanup_logs(numbackups:int = 5):
     """
     Remove old log files from the logs directory
-    Keep the last 5 log files
+    :param numbackups: The number of log files to keep
+    :return: The number of log files remaining
     """
     logs_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'logs')
     log_files = [f for f in os.listdir(logs_dir) if f.endswith('.log')]
     log_files.sort()
     
-    # Keep the last 5 log files
-    for f in log_files[:-5]:
-        os.remove(os.path.join(logs_dir, f))
-        
-    return len(log_files) - 5
+    # Keep the last numbackups log files
+    for f in log_files[:-numbackups]:
+        try:
+            os.remove(os.path.join(logs_dir, f))
+        except Exception as e:
+            logging.getLogger('pss_companion.main').error(f"Failed to remove log file {f}: {e}")
+    
+    return len(log_files) - numbackups
