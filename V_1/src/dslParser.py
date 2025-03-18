@@ -1,75 +1,71 @@
-#!/usr/bin/env python3
+import logging
 import re
 
-class DSLRule:
+# Get logger for this module
+logger = logging.getLogger('pss_companion.dslParser')
+
+class Rule:
     def __init__(self, name, condition, actions):
-        self.name = name              # e.g. "Unpowered Room Armor Check"
-        self.condition = condition    # e.g. "not room.powered and room.armor > 0"
-        self.actions = actions        # e.g. [("penalty", -5), ("message", "Unpowered room {name} should not have armor.")]
+        self.name = name
+        self.condition = condition
+        self.actions = actions
+        logger.debug(f"Rule created: {name} with {len(actions)} actions")
 
 def parse_dsl_file(file_path):
-    with open(file_path, "r") as f:
-        dsl_text = f.read()
-    return parse_dsl_text(dsl_text)
-
-def parse_dsl_text(dsl_text):
-    # This regex captures the rule name, condition, and actions.
-    rule_pattern = re.compile(
-        r'RULE\s+"(.*?)"\s*[\r\n]+\s*WHEN\s+(.*?)\s*[\r\n]+\s*THEN\s+(.*?)(?=(\nRULE\s+"|$))',
-        re.DOTALL
-    )
+    """Parse a DSL file containing rules"""
+    logger.info(f"Parsing DSL file: {file_path}")
     rules = []
-    for match in rule_pattern.finditer(dsl_text):
-        name = match.group(1).strip()
-        condition = match.group(2).strip()
-        condition = remove_comments(condition)
-        condition = replace_logical_operators(condition)
-        actions_str = match.group(3).strip()
-        actions = parse_actions(actions_str)
-        rules.append(DSLRule(name, condition, actions))
-    return rules
     
-
-def remove_comments(condition):
-    # Remove comments starting with //
-    return re.sub(r'//.*', '', condition).strip()
-
-def replace_logical_operators(condition):
-    # Replace logical operators with Python equivalents
-    condition = condition.replace('&&', 'and')
-    condition = condition.replace('||', 'or')
-    return condition
-
-def parse_actions(actions_str):
-    """
-    Parse actions separated by commas.
-    Each action is expected to be in the form: actionName(parameter)
-    """
-    actions = []
-    parts = re.split(r',\s*(?![^()]*\))', actions_str)
-    for part in parts:
-        part = part.strip()
-        m = re.match(r'(\w+)\((.*)\)', part)
-        if m:
-            action_name = m.group(1)
-            param = m.group(2).strip()
-            # Remove quotes if parameter is a string.
-            if (param.startswith('"') and param.endswith('"')) or (param.startswith("'") and param.endswith("'")):
-                param = param[1:-1]
-            else:
-                try:
-                    param = int(param)
-                except ValueError:
-                    try:
-                        param = float(param)
-                    except ValueError:
-                        pass
-            actions.append((action_name, param))
-    return actions
-
-if __name__== "__main__":
-    rules = parse_dsl_file(r"C:\Users\coleg\Documents\GitHub\PSS\Compainion_App\ROOM_RULES.dsl")
-    for rule in rules:
-        print("Rule:", rule.name)
-        print(" Condition:", rule.condition)
-        print(" Actions:", rule.actions)
+    try:
+        with open(file_path, 'r') as f:
+            content = f.read()
+        
+        logger.debug(f"DSL file read successfully, content length: {len(content)}")
+        
+        # Extract rule blocks
+        rule_pattern = r'RULE\s+"([^"]+)"\s+WHEN\s+(.*?)\s+THEN\s+(.*?)(?=RULE|$)'
+        rule_blocks = re.findall(rule_pattern, content, re.DOTALL)
+        
+        for name, condition, actions_block in rule_blocks:
+            # Clean up condition - REMOVE COMMENTS HERE TOO
+            condition = re.sub(r'//.*$', '', condition, flags=re.MULTILINE)
+            condition = condition.strip()
+            logger.debug(f"Parsed condition for rule '{name}': {condition}")
+            
+            # Parse actions properly
+            actions = []
+            
+            # Strip comments
+            actions_block = re.sub(r'//.*$', '', actions_block, flags=re.MULTILINE)
+            
+            # Find penalty actions
+            penalty_match = re.search(r'penalty\(([-+]?\d*\.?\d+)\)', actions_block)
+            if penalty_match:
+                penalty_value = float(penalty_match.group(1))
+                actions.append(('penalty', penalty_value))
+                logger.debug(f"Added penalty action: {penalty_value}")
+            
+            # Find message actions
+            message_match = re.search(r'message\("([^"]*)"\)', actions_block)
+            if message_match:
+                message_text = message_match.group(1)
+                actions.append(('message', message_text))
+                logger.debug(f"Added message action: {message_text}")
+            
+            # If no actions found, add default
+            if not actions:
+                logger.warning(f"No actions found for rule '{name}'")
+                actions = [('penalty', 0), ('message', 'No actions defined')]
+            
+            rule = Rule(name, condition, actions)
+            rules.append(rule)
+            logger.info(f"Added rule: {name} with {len(actions)} actions")
+        
+        logger.info(f"Parsed {len(rules)} rules from DSL file")
+        return rules
+    
+    except Exception as e:
+        logger.error(f"Error parsing DSL file: {e}")
+        import traceback
+        logger.debug(traceback.format_exc())
+        return []

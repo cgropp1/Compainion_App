@@ -1,0 +1,15 @@
+Found design: Yes
+Generating ship
+Ship generated with ship: Yes, room_designs: Yes, ship_design: Yes
+Design not found for Room Design ID: 574
+Ship Level: 10
+Generated user using user_file: No, user: Yes
+One block of armor is worth: 14
+['XMA', -0.5, 'Non-powered rooms should not have armor']
+['OVE', -0.5, 'Non-powered rooms should not have armor']
+['CAP', -0.5, 'Non-powered rooms should not have armor']
+['LAB', -0.5, 'Non-powered rooms should not have armor']
+['MST', -0.5, 'Non-powered rooms should not have armor']
+['GST', -0.5, 'Non-powered rooms should not have armor']
+['BED', -0.5, 'Non-powered rooms should not have armor']
+(-3.5, [['AQU', 0, 'No Rule Triggered'], ['CAR', 0, 'No Rule Triggered'], ['MP', 0, 'No Rule Triggered'], [None, 0, 'No Rule Triggered'], ['VM', 0, 'No Rule Triggered'], ['XMA', -0.5, 'Non-powered rooms should not have armor'], ['DH', 0, 'No Rule Triggered'], ['CG', 0, 'No Rule Triggered'], ['OVE', -0.5, 'Non-powered rooms should not have armor'], ['GRA', 0, 'No Rule Triggered'], ['MST', 0, 'No Rule Triggered'], ['CP', 0, 'No Rule Triggered'], ['DB', 0, 'No Rule Triggered'], ['CAP', -0.5, 'Non-powered rooms should not have armor'], ['FRE', 0, 'No Rule Triggered'], ['AS', 0, 'No Rule Triggered'], ['WH', 0, 'No Rule Triggered'], ['BED', 0, 'No Rule Triggered'], ['HAN', 0, 'No Rule Triggered'], ['BT', 0, 'No Rule Triggered'], ['ENG', 0, 'No Rule Triggered'], ['TLP', 0, 'No Rule Triggered'], ['FLE', 0, 'No Rule Triggered'], ['REA', 0, 'No Rule Triggered'], ['PP', 0, 'No Rule Triggered'], ['REA', 0, 'No Rule Triggered'], ['LAB', -0.5, 'Non-powered rooms should not have armor'], ['BED', 0, 'No Rule Triggered'], ['MST', -0.5, 'Non-powered rooms should not have armor'], ['SHL', 0, 'No Rule Triggered'], ['GST', -0.5, 'Non-powered rooms should not have armor'], ['BT', 0, 'No Rule Triggered'], ['REA', 0, 'No Rule Triggered'], ['BED', -0.5, 'Non-powered rooms should not have armor'], ['PLA', 0, 'No Rule Triggered']])
