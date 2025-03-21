@@ -7,6 +7,9 @@ from typing import Dict, Any, List, Optional, Union
 from datetime import datetime
 import atexit
 
+#TODO: Add database integration
+#TODO: Add to matches
+
 # Get logger for this module
 logger = logging.getLogger('pss_companion.fileManager')
 

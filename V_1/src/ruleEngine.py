@@ -1,9 +1,13 @@
 import logging
+import traceback
 import asyncio
+import json as _json
 
 from src import dslParser as _dslParser
-from src import room as _Room
+from src import room as _room
+from src import ship as _ship
 from src import user as _user
+from src import config as _config
 
 # Get logger for this module
 logger = logging.getLogger('pss_companion.ruleEngine')
@@ -17,7 +21,10 @@ class RuleEngine:
         self.rules = None
         self.user = None
         self.rooms = None
+        self.lifts = None
         self.ship_armor_value = None
+        self.np_multiplier = 1.0
+
 
     @classmethod
     async def create(cls, api_interface: apiInterface, rules_file: str, user_file: str = None, user: _user.User = None):
@@ -32,6 +39,7 @@ class RuleEngine:
             logger.info(f"Initializing Rule Engine with rules file: {rules_file}")
             self.rules = _dslParser.parse_dsl_file(rules_file)
             logger.debug(f"Loaded {len(self.rules)} rules from DSL file")
+
             
             if user_file:
                 logger.info(f"Loading user data from file: {user_file}")
@@ -41,6 +49,9 @@ class RuleEngine:
                 logger.info(f"Using provided user object")
                 self.user = user
                 
+            self.lifts = self.user.ship.Lifts
+            logger.debug(f"Retrieved {len(self.lifts)} lifts from user data")
+            
             self.rooms = self.user.rooms
             logger.debug(f"Retrieved {len(self.rooms)} rooms from user data")
             
@@ -50,7 +61,7 @@ class RuleEngine:
             logger.error(f"Error initializing Rule Engine: {e}")
             raise
 
-    def evaluate_room(self, room: _Room.Room) -> tuple[str, str, int]:
+    def evaluate_room(self, room: _room.Room) -> tuple[str, str, int]:
         """Evaluate room against rules and return results"""
         try:
             if not room or not hasattr(room, 'room') or not room.room:
@@ -81,6 +92,11 @@ class RuleEngine:
                     
                     if result:
                         logger.info(f"Rule '{rule.name}' triggered for room {room_name}")
+
+                        # Run acttions basses on essensal rooms
+                        if room.type in _config.get_essential_rooms():
+                            logger.info(f"Room {room_name} is essential")
+                            self.np_multiplier += .01
                         
                         # Extract rule actions safely
                         try:
@@ -128,41 +144,111 @@ class RuleEngine:
                             logger.error(f"Error extracting rule results: {e}")
                             import traceback
                             logger.debug(traceback.format_exc())
-                            return [room_name, 0, f"Error: {str(e)}"]
+                            return [room_name, 0, f"Error: {str(e)}"]                        
                 except Exception as e:
                     logger.error(f"Error evaluating rule condition '{condition}': {str(e)}")
                     import traceback
                     logger.debug(traceback.format_exc())
                     continue
-                    
+            if room.type in _config.get_essential_rooms():
+                logger.info(f"Room {room_name} is essential, reducing NP multiplier")
+                self.np_multiplier -= .01
             return [room_name, 0, "No Rule Triggered"]
+                    
+            
         except Exception as e:
             logger.error(f"Error in evaluate_room: {e}")
             import traceback
             logger.debug(traceback.format_exc())
             return ["Error", 0, str(e)]
+        
+    def evaluate_lift(self, lift: _ship.lift) -> tuple[str, int, str]:
+        """Evaluate a lift object against lift-specific rules"""
+        try:
+            if not lift or not hasattr(lift, 'rooms'):
+                logger.warning("Skipping invalid lift in evaluation")
+                return ["Unknown", 0, "Invalid Lift"]
+                
+            lift_id = f"Lift-{id(lift)}"  # Create a unique identifier for this lift
+            logger.debug(f"Evaluating rules for lift with {lift.langth} rooms")
+            
+            # For the LFT_LENGTH rule
+            if lift.type == "LiftOBJ" and lift.langth > 5:
+                penalty_value = -0.25 * lift.langth
+                message = "Lifts should be short"
+                logger.info(f"Rule 'LFT_LENGTH' triggered for lift with {lift.langth} rooms")
+                return [lift_id, penalty_value, message]
+                
+            return [lift_id, 0, "No Rule Triggered"]
+        except Exception as e:
+            logger.error(f"Error in evaluate_lift: {e}")
+            import traceback
+            logger.debug(traceback.format_exc())
+            return ["Error", 0, str(e)]
+
+    def evaluate_lifts(self) -> tuple[float, list[tuple[str, int, str]]]:
+        """Evaluate all lifts and return results"""
+        logger.info("Starting evaluation of all lifts")
+        evaluations = []
+        issues = []
+
+        try:
+            for lift in self.lifts:
+                result = self.evaluate_lift(lift)
+                evaluations.append(result)
+                if result[1] != 0:
+                    issues.append(result)
+                    
+            # Calculate score based on penalties
+            score = sum(eval_item[1] for eval_item in evaluations)
+            
+            logger.info(f"Lift evaluation complete. Score contribution: {score}")
+            return score, evaluations, issues
+        except Exception as e:
+            logger.error(f"Error in evaluate_lifts: {e}")
+            return 0.0, [], []
 
     def evaluate_all_rooms(self) -> tuple[float, list[tuple[str, int, str]]]:
-        logger.info("Starting evaluation of all rooms")
-        score = 0.0
-        evaluations = []
+        logger.info("Starting evaluation of all rooms and lifts")
+        score = 100.0
+        room_evaluations = []
+        lift_evaluations = []
         issues = []
         
         try:
+            # Evaluate regular rooms
             for room in self.rooms:
-                if room.type in ["Wall", "Lift", "Corridor"]:
+                if room.type in ["Wall", "Corridor", "Lift"]:
                     logger.debug(f"Skipping room {room.id} of type {room.type}")
                     continue
                     
                 result = self.evaluate_room(room)
-                evaluations.append(result)
-                if evaluations[-1][1] != 0:
-                    issues.append(evaluations[-1])
-                score += result[1]
-                
-            logger.info(f"Evaluation complete. Final score: {score}")
-            logger.debug(f"Detailed evaluations: {evaluations}")
-            return score, evaluations, issues
+                room_evaluations.append(result)
+                if result[1] != 0:
+                    issues.append(result)
+            
+            # Evaluate lifts
+            lift_score, lift_evals, lift_issues = self.evaluate_lifts()
+            lift_evaluations.extend(lift_evals)
+            issues.extend(lift_issues)
+            
+            # Combine all evaluations
+            all_evaluations = room_evaluations + lift_evaluations
+
+            # Apply NP multiplier to appropriate room evaluations
+            logger.info(f"Applying NP multiplier: {self.np_multiplier}")
+            for evaluation in room_evaluations:
+                if evaluation[2] == 'Non-powered rooms should not have armor':
+                    logger.debug(f"Applying NP multiplier to room {evaluation[0]}")
+                    evaluation[1] *= self.np_multiplier
+            
+            # Calculate final score
+            total_penalty = sum(eval_item[1] for eval_item in all_evaluations)
+            score += total_penalty
+            
+            logger.debug(f"Detailed evaluations: {all_evaluations}")
+            logger.info(f"Evaluation complete. Final score: {score} / 100")
+            return score, all_evaluations, issues
             
         except Exception as e:
             logger.error(f"Error in evaluate_all_rooms: {e}")

@@ -4,33 +4,36 @@ import json as _json
 import logging
 
 from src import room as _Room
+from src import fileManager as _fileManager
+from src import config as _config
 
 # Get logger for this module
 logger = logging.getLogger('pss_companion.ship')
 
-essensal_rooms = [
-    "Shield",
-    "Engine",
-    "Stealth",
-    "Teleport",
-    "Android"
-]
-
-armor_value_per_lvl = {
-    "1": 2,
-    "2": 4,
-    "3": 5,
-    "4": 6,
-    "5": 7,
-    "6": 8,
-    "7": 9,
-    "8": 10,
-    "9": 12,
-    "10": 14,
-    "11": 16,
-    "12": 18,
-    "13": 18
-}
+class lift:
+    def __init__(self, _rooms: list[_Room.Room]) -> None:
+        try:
+            self._type = "LiftOBJ"
+            self.rooms = _rooms
+        except Exception as e:
+            logging.error(f'Error in __init__(self): {e}')
+            raise
+    
+    @property
+    def langth(self) -> int:
+        try:
+            return len(self.rooms)
+        except Exception as e:
+            logging.error(f'Error in langth(self): {e}')
+            raise
+    
+    @property
+    def type(self) -> str:
+        try:
+            return self._type
+        except Exception as e:
+            logging.error(f'Error in type(self): {e}')
+            raise
 
 class Ship:
     """
@@ -51,7 +54,9 @@ class Ship:
             if _ship and _room_designs and _ship_design:
                 try:
                     self.shipRooms = []
-                    self.shipArmor = []
+                    self.ArmorRooms = []
+                    self.LiftRooms = []
+                    self.Lifts = []
                     logger.info(f"Processing {len(_ship.rooms)} rooms")
                     
                     for room in _ship.rooms:
@@ -78,16 +83,64 @@ class Ship:
                                 logger.warning(f"Design not found for Room Design ID: {room.room_design_id}")
                             else:
                                 logger.debug(f"Initializing Room with ID: {room.id}, Design ID: {room.room_design_id}")
+
+                                essensal_rooms = _config.get_essential_rooms()
+
                                 self.shipRooms.append(_Room.Room(_essensal_rooms=essensal_rooms, _room=room, _design=design))
                                 if self.shipRooms[-1].getType() == "Wall":
-                                    self.shipArmor.append(self.shipRooms[-1])
+                                    self.ArmorRooms.append(self.shipRooms[-1])
                                     logger.debug(f"Added armor room with ID: {room.id}")
+                                if self.shipRooms[-1].getType() == "Lift":
+                                    self.LiftRooms.append(self.shipRooms[-1])
+                                    logger.debug(f"Added lift room with ID: {room.id}")
                         except Exception as e:
                             logger.error(f"Error processing room {room.id}: {e}")
                     
                     logger.info(f"Ship Level: {_ship_design.get('ship_level', None)}")
-                    self.shipArmorValue = armor_value_per_lvl.get(str(_ship.ship_level), 0)
+                    self.shipArmorValue = _config.get_armor_value(_ship.ship_level)
                     logger.info(f"Ship armor value per block: {self.shipArmorValue}")
+
+                    logger.info(f"Setting armor for adjacent rooms. Armor rooms: {len(self.ArmorRooms)}")
+                    for armor in self.ArmorRooms:
+                        adjacent_rooms = self.getAjacentRooms(armor)
+                        logger.debug(f"Armor room {armor.id} has {len(adjacent_rooms)} adjacent rooms")
+                        for room in adjacent_rooms:
+                            room.setArmor(armor)
+
+
+                    # Group lift rooms into vertical lift objects
+                    try:
+                        logger.info(f"Compiling {len(self.LiftRooms)} lifts into lift objects")
+                        
+                        # Group lift rooms by their X position
+                        lifts_by_x = {}
+                        for room in self.LiftRooms:
+                            # Get room position from the room object
+                            room_x = room.x
+                            room_y = room.y
+                            
+                            # Group by X coordinate (horizontal position)
+                            if room_x not in lifts_by_x:
+                                lifts_by_x[room_x] = []
+                            lifts_by_x[room_x].append(room)
+                            logger.debug(f"Adding lift room {room.id} at position ({room_x}, {room_y}) to group")
+                        
+                        # Create lift objects for each vertical column of lifts
+                        self.Lifts = []
+                        for x_pos, rooms in lifts_by_x.items():
+                            # Sort rooms by Y position (top to bottom)
+                            rooms.sort(key=lambda r: r.y)
+                            
+                            # Create a new lift object with these vertically aligned rooms
+                            self.Lifts.append(lift(rooms))
+                            logger.debug(f"Created lift at x={x_pos} with {len(rooms)} rooms: {[r.id for r in rooms]}")
+                        
+                        logger.info(f"Created {len(self.Lifts)} lift objects")
+                    except Exception as e:
+                        logger.error(f"Error creating lift objects: {e}")
+                        import traceback
+                        logger.debug(traceback.format_exc())
+                    
 
                     self.ship = {
                         #"""PER DATE"""#
@@ -99,12 +152,7 @@ class Ship:
                         "ship_rooms": [room.to_dict() for room in self.shipRooms],
                     }
                     
-                    logger.info(f"Setting armor for adjacent rooms. Armor rooms: {len(self.shipArmor)}")
-                    for armor in self.shipArmor:
-                        adjacent_rooms = self.getAjacentRooms(armor)
-                        logger.debug(f"Armor room {armor.id} has {len(adjacent_rooms)} adjacent rooms")
-                        for room in adjacent_rooms:
-                            room.setArmor(armor)
+                    
                             
                     logger.debug(f"Ship initialization complete. Total rooms: {len(self.shipRooms)}")
                 except Exception as e:

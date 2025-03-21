@@ -3,6 +3,8 @@
 // Beacons = .5 "blocks" of Armor
 
 // ---"Essensal" room RULES---
+//Essensal rooms being under armored gives a +.01 mult to the negitive from non-powered rooms
+//Essensal rooms being correctly armored gives a -.01 mult
 // SHL must have 6 blocks of armor
 RULE "SHL_ARMOR"
     WHEN
@@ -238,3 +240,25 @@ RULE "NON_POWERED_ARMOR_MAX"
     THEN
         penalty(-5),
         message("Non-powered rooms should not have armor")
+
+// ---"Langth" RULES---
+// Lifts should be short
+RULE "LFT_LENGTH"
+    WHEN
+        // Lift is too long
+        room.type == "LiftOBJ" && room.Langth > 5
+    THEN
+        penalty(-.25 * room.Langth),
+        message("Lifts should be short")
+
+// Pathing should be short
+
+// ---"AOE" RULES---
+// Non-powered rooms can be used to tank AOE
+
+//Rooms should not be isolated
+
+// ---"Misc" RULES---
+// Bait rooms can be used to have the enemy waste power
+
+// You should stick to one arcatype

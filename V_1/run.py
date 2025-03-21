@@ -22,7 +22,6 @@ file_manager = _fileManager.FileManager(base_dir=os.path.join(os.path.dirname(os
 #TODO: Create a UI that can can be used with the overlay and the companion app
 #TODO: Go back over the matches code (ADD rating)
 #TODO: Finish the rule engine rules
-#TODO: Create a file manager to handle the saving and loading of files
 #TODO: Finnish out the AI for the companion app and the overlay
 #TODO: Finish the overlay
 #TODO: Clean up dependencies and clean up the code with better def comments

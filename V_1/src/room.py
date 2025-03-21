@@ -220,6 +220,22 @@ class Room:
             logging.error(f'Error in id(self): {e}')
             raise
 
+    @property
+    def x(self) -> int:
+        try:
+            return self.room["room_cords"][0]
+        except Exception as e:
+            logging.error(f'Error in x(self): {e}')
+            raise
+
+    @property
+    def y(self) -> int:
+        try:
+            return self.room["room_cords"][1]
+        except Exception as e:
+            logging.error(f'Error in y(self): {e}')
+            raise
+
     def __repr__(self) -> str:
         try:
             return str(self.to_dict())
